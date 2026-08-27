@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 마케팅 클래스 | 니잉 뷰티업 교육</title>
+<meta name="description" content="AI로 초상권은 지키고, 포트폴리오는 제대로 보여주세요. 오프라인 3~5시간, 50만원부터.">
+<meta name="theme-color" content="#0b0b0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230b0b0a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2217%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23f0ede6%22 font-family=%22sans-serif%22%3E%EB%8B%88%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 마케팅 클래스 | 니잉 뷰티업 교육">
+<meta property="og:description" content="AI로 초상권은 지키고, 포트폴리오는 제대로 보여주세요. 오프라인 3~5시간, 50만원부터.">
+<meta property="og:image" content="https://neeink.vercel.app/assets/img/hero.webp">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+@font-face{font-family:'Freesentation';src:url(../assets/fonts/Freesentation-4Regular.ttf) format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Freesentation';src:url(../assets/fonts/Freesentation-8ExtraBold.ttf) format('truetype');font-weight:800;font-display:swap}
+
+:root{
+  --ground:#0b0b0a;--elev:#141311;--elev-2:#1b1a17;
+  --text:#f0ede6;--dim:rgba(240,237,230,.64);--faint:rgba(240,237,230,.42);
+  --line:rgba(240,237,230,.14);--line-strong:rgba(240,237,230,.26);
+  --c:#a8bdd4;
+  --ease:cubic-bezier(.19,1,.22,1);--nav-h:62px;
+  --font-kr:'Freesentation',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+  --font-en:'Space Grotesk','Freesentation',sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--text);font-family:var(--font-kr);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;padding-bottom:var(--nav-h)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+em{padding-right:.14em}
+.wrap{max-width:760px;margin:0 auto;padding-left:22px;padding-right:22px}
+.wide{max-width:960px;margin:0 auto;padding-left:22px;padding-right:22px}
+
+header.top{position:sticky;top:0;z-index:40;background:rgba(11,11,10,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:14px 22px}
+.mark{font-weight:800;font-size:1.12rem;letter-spacing:-.02em}
+.mark sup{font-family:var(--font-en);font-size:.5em;font-weight:500;color:var(--faint);vertical-align:super;margin-left:2px}
+.top-in .bk{font-size:.74rem;color:var(--faint)}
+.top-in .bk:hover{color:var(--text)}
+
+.hero{padding-top:78px;padding-bottom:72px;text-align:center;border-bottom:1px solid var(--line)}
+.hero .kicker{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-en);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:26px;padding:6px 14px;border:1px solid var(--line-strong);border-radius:999px}
+.hero .kicker i{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.hero h1{font-weight:800;font-size:clamp(1.38rem,6vw,2.8rem);line-height:1.44;letter-spacing:-.03em;margin:0 0 22px;word-break:keep-all}
+.hero h1 em{font-style:italic;font-weight:800}
+.hero p{color:var(--dim);font-size:clamp(.95rem,2.7vw,1.06rem);max-width:27em;margin:0 auto 32px;line-height:1.75}
+.pills{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:13px 24px;border-radius:999px;font-weight:800;font-size:.9rem;border:1px solid var(--line-strong);transition:all .3s var(--ease)}
+.pill.solid{background:var(--text);color:var(--ground);border-color:var(--text)}
+.pill.solid:hover{opacity:.86}
+.pill.line:hover{border-color:var(--text);background:var(--elev)}
+
+.proof{display:flex;justify-content:center;flex-wrap:wrap;margin-top:40px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof .cell{flex:1 1 50%;padding:22px 18px;text-align:center;border-right:1px solid var(--line)}
+.proof .cell:last-child{border-right:none}
+.proof .n{font-family:var(--font-en);font-weight:700;font-size:1.7rem;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.proof .l{font-size:.72rem;color:var(--faint);margin-top:6px}
+
+section{padding-top:clamp(68px,10vw,100px);padding-bottom:clamp(44px,6vw,60px)}
+.eyebrow{font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:24px}
+h2.st{font-weight:800;font-size:clamp(1.45rem,5vw,2.1rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 20px;word-break:keep-all}
+h2.st.lead{font-size:clamp(1.18rem,5.4vw,2.1rem);line-height:1.44;letter-spacing:-.028em}
+h2.st em{font-style:italic;font-weight:400}
+p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
+
+/* problem */
+.prob{list-style:none;margin:44px 0 0;padding:0;display:flex;flex-direction:column}
+.prob li{display:grid;grid-template-columns:24px 1fr;gap:14px;padding:24px 0;border-top:1px solid var(--line);font-size:.95rem;color:var(--dim);align-items:baseline}
+.prob li:last-child{border-bottom:1px solid var(--line)}
+.prob li .x{font-family:var(--font-en);color:var(--faint);font-size:.8rem}
+.prob li.turn{color:var(--text);font-weight:800;font-size:clamp(1.08rem,3.6vw,1.35rem);padding:30px 0 26px;letter-spacing:-.015em}
+.prob li.turn .x{color:var(--c)}
+.prob li.turn em{font-style:italic;font-weight:400}
+
+/* gains */
+.gain{display:flex;flex-direction:column;margin-top:44px}
+.gn{display:grid;grid-template-columns:24px 1fr;gap:10px;padding:24px 0;border-top:1px solid var(--line);align-items:baseline}
+.gn:last-child{border-bottom:1px solid var(--line)}
+.gn>i{color:var(--c);font-style:normal;font-family:var(--font-en);font-size:.82rem}
+.gn .a{font-weight:800;font-size:1rem;letter-spacing:-.01em;margin-bottom:7px}
+.gn .b{color:var(--dim);font-size:.9rem;max-width:34em}
+
+/* why not */
+.nope{list-style:none;margin:40px 0 0;padding:0;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:var(--elev);padding:8px clamp(22px,5vw,32px)}
+.nope li{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line);font-size:.95rem;color:var(--text)}
+.nope li:first-child{border-top:none}
+.nope li i{font-style:normal;font-family:var(--font-en);font-weight:700;font-size:1.5rem;color:var(--c);opacity:.7}
+
+/* shout */
+.shout{border:1px solid var(--line);border-radius:16px;background:var(--elev);padding:clamp(40px,8vw,58px) 26px;text-align:center;margin-top:8px}
+.shout .lead{font-size:.86rem;color:var(--faint);margin:0 0 22px;letter-spacing:.02em}
+.shout .big{font-weight:800;font-size:clamp(1.18rem,4.5vw,1.8rem);line-height:1.62;letter-spacing:-.02em;margin:0;word-break:keep-all}
+.shout .big em{font-style:italic;font-weight:400}
+.shout .rule{border:none;border-top:1px solid var(--line-strong);width:40px;margin:30px auto}
+.shout .tail{font-size:clamp(1.02rem,3.4vw,1.24rem);font-weight:800;color:var(--text);margin:0;line-height:1.7;word-break:keep-all}
+.shout .tail b{color:var(--c);font-weight:800}
+.shout .tail em{font-style:italic;font-weight:400}
+.shout .body{margin:18px 0 0;color:var(--dim);font-size:clamp(.94rem,2.6vw,1.02rem);line-height:1.8;word-break:keep-all}
+.shout .last{margin:38px 0 0;padding-top:40px;border-top:1px solid var(--line);font-size:clamp(1.2rem,4.4vw,1.6rem);line-height:1.5;letter-spacing:-.02em;font-weight:800;color:var(--text);word-break:keep-all}
+.shout .last b{color:var(--c);font-weight:800}
+
+/* format rows */
+.spec{margin-top:40px;display:flex;flex-direction:column}
+.spec .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:19px 0;border-top:1px dotted var(--line-strong);font-size:.92rem}
+.spec .r:first-child{border-top:none}
+.spec .r dt{color:var(--faint)}
+.spec .r dd{margin:0;text-align:right}
+.spec .r dd b{font-family:var(--font-en);font-weight:700;font-size:1.1rem;font-variant-numeric:tabular-nums}
+
+/* pricing */
+.pg{display:grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
+@media(min-width:660px){.pg{grid-template-columns:1fr 1fr}}
+.pc{background:var(--elev);border:1px solid var(--line);border-radius:14px;padding:30px 24px 26px;display:flex;flex-direction:column;transition:border-color .35s var(--ease),background .35s var(--ease)}
+.pc:hover{border-color:var(--line-strong);background:var(--elev-2)}
+.pc.hi{background:var(--text);color:var(--ground);border-color:var(--text)}
+.pc.hi:hover{background:var(--text)}
+.pc .tag{font-family:var(--font-en);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:12px}
+.pc.hi .tag{color:rgba(11,11,10,.5)}
+.pc .nm{font-weight:800;font-size:1.24rem;letter-spacing:-.01em;margin-bottom:6px}
+.pc .meta{font-size:.84rem;color:var(--faint);margin-bottom:22px}
+.pc.hi .meta{color:rgba(11,11,10,.52)}
+.pc .hl{font-size:.86rem;font-weight:800;text-align:left;padding:12px 14px;border-radius:9px;background:rgba(240,237,230,.07);color:var(--text);margin-bottom:22px;letter-spacing:-.01em}
+.pc.hi .hl{background:rgba(11,11,10,.09);color:var(--ground)}
+.pc ul{list-style:none;margin:0 0 26px;padding:0;display:flex;flex-direction:column;font-size:.87rem}
+.pc ul li{padding:13px 0;border-top:1px dotted var(--line-strong);color:var(--dim);display:flex;flex-direction:column;gap:5px;text-align:left}
+.pc ul li:first-child{border-top:none;padding-top:0}
+.pc ul li .t{line-height:1.55}
+.pc ul li .s{font-size:.77rem;line-height:1.5;color:var(--faint);letter-spacing:-.01em}
+.pc.hi ul li{border-color:rgba(11,11,10,.18);color:rgba(11,11,10,.66)}
+.pc.hi ul li .s{color:rgba(11,11,10,.45)}
+.pc ul li b{font-weight:800;color:var(--c)}
+.pc.hi ul li b{color:#0b0b0a}
+.pc .amt{font-family:var(--font-en);font-weight:700;font-size:2.3rem;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.pc .amt small{font-family:var(--font-kr);font-size:.95rem;font-weight:800;margin-left:3px}
+.pc .vat{font-size:.72rem;color:var(--faint);margin:8px 0 24px}
+.pc.hi .vat{color:rgba(11,11,10,.5)}
+.pc .foot{margin-top:auto;padding-top:26px}
+.pc .btn{display:flex;align-items:center;justify-content:center;padding:14px;border-radius:999px;font-weight:800;font-size:.9rem;background:var(--text);color:var(--ground);transition:opacity .3s var(--ease)}
+.pc .btn:hover{opacity:.86}
+.pc.hi .btn{background:var(--ground);color:var(--text)}
+
+.soon{margin-top:20px;border:1px dashed var(--line-strong);border-radius:14px;padding:22px 24px;display:flex;gap:14px;align-items:flex-start;font-size:.88rem;color:var(--dim);line-height:1.7}
+.soon .bd{font-family:var(--font-en);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-strong);border-radius:999px;padding:4px 11px;color:var(--text);flex-shrink:0;margin-top:2px}
+
+.cross{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1px solid var(--line);border-radius:14px;font-size:.9rem;color:var(--dim);transition:border-color .35s var(--ease),background .35s var(--ease)}
+.cross:hover{border-color:var(--line-strong);background:var(--elev)}
+.cross b{color:var(--text);font-weight:800}
+.cross .ar{font-family:var(--font-en);color:var(--faint)}
+
+.close{text-align:center;padding-top:clamp(68px,10vw,100px);padding-bottom:80px}
+.close h2{font-weight:800;font-size:clamp(1.5rem,5.4vw,2.15rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.close h2 em{font-style:italic;font-weight:400}
+.close p{color:var(--dim);font-size:.94rem;margin:0 0 30px}
+.fine{margin-top:32px;font-size:.7rem;color:var(--faint);line-height:1.9}
+
+nav.tab{position:fixed;left:0;right:0;bottom:0;z-index:50;height:var(--nav-h);display:grid;grid-template-columns:repeat(4,1fr);background:rgba(11,11,10,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav.tab a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:.64rem;color:var(--faint);transition:color .25s var(--ease)}
+nav.tab a svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+nav.tab a:hover{color:var(--dim)}
+nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="../">니잉<sup>®</sup></a>
+    <a class="bk" href="../">← 교육 선택</a>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <span class="kicker"><i></i>AI Marketing</span>
+  <h1>좋은 결과도 공개할 수 없다면,<br><em>매출로 연결되지 않습니다.</em></h1>
+  <p>AI로 초상권은 지키고, 포트폴리오는 제대로 보여주세요.</p>
+  <div class="pills">
+    <a class="pill solid" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">신청 문의하기</a>
+    <a class="pill line" href="#curriculum">무엇을 배우나</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">The problem</span>
+  <h2 class="st">실력이 있어도,<br>제대로 표현되지 못하면<br><em>말짱 도루묵</em>입니다</h2>
+  <p class="ss">올릴 게 없는 게 문제가 아닙니다.<br>올라간 사진만 고객의 기억에 남는 게 문제죠.</p>
+  <ul class="prob">
+    <li><span class="x">01</span><span>고객은 얼굴 전체를 보며 완성된 내 모습을 상상합니다.</span></li>
+    <li><span class="x">02</span><span>하지만 고객은 얼굴이 공개되는 걸 싫어하죠. 그래서 사진 사용이 조심스러워져요.</span></li>
+    <li><span class="x">03</span><span>동의를 받지 못하면, 그날 작업 사진은 한 장도 쓸 수 없게 됩니다.</span></li>
+    <li><span class="x">04</span><span>마스크 쓴 사진과 모자이크 사진은, 원장님의 실력을 담지 못해요.</span></li>
+    <li class="turn"><span class="x">05</span><span>가리지 말고, <em>바꾸면</em> 됩니다.</span></li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">Why not</span>
+  <h2 class="st">혼자 찾아서 해보면<br><em>되지 않나요?</em></h2>
+  <p class="ss">전자책도 보고 인스타에 떠도는 정보로도 해보신 원장님들이,<br>수업에 오셔서 하시는 말씀입니다.</p>
+  <ul class="nope">
+    <li><i>“</i><span>프롬프트를 그대로 넣어도, 제대로 된 사진을 건지기가 어려워요.</span></li>
+    <li><i>“</i><span>따라 하려고 해도 무슨 말인지 알 수가 없더라고요.</span></li>
+    <li><i>“</i><span>막히는 순간 물어볼 곳이 없어서, 거기서 그냥 덮었어요.</span></li>
+    <li><i>“</i><span>한 장 만드는 데 너무 오래 걸리고 과정도 복잡해서, 매일 올리는 건 힘들어요.</span></li>
+  </ul>
+</section>
+
+<section class="wrap" id="curriculum">
+  <span class="eyebrow">The fix</span>
+  <div class="shout">
+    <p class="lead">해보신 분들은 압니다.</p>
+    <p class="big">프롬프트와 싸우고,<br>GPT랑 싸우고, 제미나이랑 싸우고.<br>AI를 쥐 잡듯이 잡아도<br><em>터지는 건 내 속</em>뿐이죠.</p>
+    <hr class="rule">
+    <p class="tail">그 <em>맨땅에 헤딩</em>은 제가 다 해봤어요.</p>
+    <p class="body">이것저것 결제하고, 화나고, 시간 버리는 대신<br>제가 직접 다 써보고 집요하게 찾은 알짜배기 팁만 공유해드릴게요.</p>
+    <p class="last">원장님은 오셔서 진짜 <b>'딸깍'</b>만 배워가세요.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">What changes</span>
+  <h2 class="st">배우고 나면<br>이런 것들이 <em>달라집니다</em></h2>
+  <p class="ss">사진 한 장이 아니라, 마케팅에 쓰는 시간 전체가 달라집니다.</p>
+  <div class="gain">
+    <div class="gn">
+      <i>✓</i>
+      <div>
+        <div class="a">후기 사진의 제약이 사라집니다</div>
+        <div class="b">잠자고 있던 사진을 모두 쓸 수 있게 됩니다.</div>
+      </div>
+    </div>
+    <div class="gn">
+      <i>✓</i>
+      <div>
+        <div class="a">고객이 시술 후 모습을 쉽게 상상합니다</div>
+        <div class="b">얼굴 전체가 보이면 "나도 저렇게 되겠구나"가 그려지죠. 그게 예약으로 이어집니다.</div>
+      </div>
+    </div>
+    <div class="gn">
+      <i>✓</i>
+      <div>
+        <div class="a">AI 도구를 헤매는 시간과 비용이 줄어듭니다</div>
+        <div class="b">이것저것 결제해보고 버리는 대신, 검증된 것만 골라 바로 씁니다.</div>
+      </div>
+    </div>
+    <div class="gn">
+      <i>✓</i>
+      <div>
+        <div class="a">반복 업무가 줄어듭니다</div>
+        <div class="b">콘텐츠 만들기와 운영에서 매번 하던 일을 덜어냅니다.</div>
+      </div>
+    </div>
+    <div class="gn">
+      <i>✓</i>
+      <div>
+        <div class="a">원장님이 직접 만들 수 있게 됩니다</div>
+        <div class="b">외주에 맡기고 기다리지 않고, 필요할 때 바로 만듭니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">Format</span>
+  <h2 class="st">진행 방식</h2>
+  <dl class="spec">
+    <div class="r"><dt>진행</dt><dd>오프라인 · 신논현 스튜디오</dd></div>
+    <div class="r"><dt>인원</dt><dd>3:1 그룹 또는 1:1</dd></div>
+    <div class="r"><dt>수업 시간</dt><dd>그룹 <b>3</b>시간 · 1:1 <b>5</b>시간</dd></div>
+    <div class="r"><dt>회차</dt><dd><b>1</b>회 완성</dd></div>
+  </dl>
+</section>
+
+<section class="wide" style="padding-top:28px">
+  <span class="eyebrow">Pricing</span>
+  <h2 class="st">수강료</h2>
+  <div class="pg">
+    <div class="pc">
+      <div class="tag">Group · 3:1</div>
+      <div class="nm">3명 함께</div>
+      <div class="meta">3시간 · 1회 완성</div>
+      <div class="hl">가장 기본이 되는 커리큘럼</div>
+      <ul>
+        <li><span class="t"><b>베이직</b> 사전셋팅</span></li>
+        <li><span class="t"><b>베이직</b> 얼굴 체인지 방법</span><span class="s">애프터 · 비포앤애프터 · 고화질 작업법</span></li>
+        <li><span class="t">보정 어플 사용법</span></li>
+        <li><span class="t"><b>베이직</b> 동영상 만드는 방법</span></li>
+        <li><span class="t">프롬프트 작성법</span></li>
+        <li><span class="t"><b>기본</b> 프롬프트 제공</span></li>
+        <li><span class="t">피드백 기간 <b>1개월</b></span></li>
+      </ul>
+      <div class="foot">
+        <div class="amt">50<small>만원</small></div>
+        <div class="vat">부가세 별도</div>
+        <a class="btn" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">신청 문의</a>
+      </div>
+    </div>
+    <div class="pc hi">
+      <div class="tag">Private · 1:1</div>
+      <div class="nm">단독 진행</div>
+      <div class="meta">5시간 · 1회 완성</div>
+      <div class="hl">현존하는 모든 방법 공개</div>
+      <ul>
+        <li><span class="t"><b>프리미엄</b> 사전셋팅</span></li>
+        <li><span class="t">베이직 얼굴 체인지 방법</span><span class="s">애프터 · 비포앤애프터 · 고화질 작업법</span></li>
+        <li><span class="t"><b>프리미엄</b> 활용 방법</span><span class="s">연출샷 · 화보샷 제작 방법</span></li>
+        <li><span class="t">보정 어플 사용법</span></li>
+        <li><span class="t">베이직 동영상 만드는 방법</span></li>
+        <li><span class="t"><b>프리미엄</b> 동영상 만드는 방법</span></li>
+        <li><span class="t">프롬프트 작성법</span></li>
+        <li><span class="t"><b>맞춤</b> 프롬프트 제공</span></li>
+        <li><span class="t">피드백 기간 <b>1년</b></span></li>
+      </ul>
+      <div class="foot">
+        <div class="amt">100<small>만원</small></div>
+        <div class="vat">부가세 별도</div>
+        <a class="btn" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">신청 문의</a>
+      </div>
+    </div>
+  </div>
+  <div class="soon">
+    <span class="bd">Soon</span>
+    <span>온라인 클래스는 현재 준비 중입니다. 오프라인 참여가 어려우시면 카카오톡으로 문의를 남겨주세요.<br>열리는 대로 가장 먼저 안내드릴게요.</span>
+  </div>
+</section>
+
+<section class="wrap" style="padding:24px 22px 0">
+  <a class="cross" href="../lash/"><span>시술 실력 자체를 다지고 싶다면 <b>급속교정 클래스</b></span><span class="ar">→</span></a>
+</section>
+
+<section class="close wrap">
+  <h2>더 이상 숨기지 마세요.<br><em>보여줘야</em> 팔립니다.</h2>
+  <p>지금 계정 상황을 말씀해주시면, 어디부터 손볼지 알려드릴게요.</p>
+  <a class="pill solid" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">카카오톡으로 문의하기</a>
+  <div class="fine">AI 마케팅 클래스 · 니잉<br>서울 강남구 신논현</div>
+</section>
+
+<nav class="tab">
+  <a href="../">
+    <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+    홈
+  </a>
+  <a href="../lash/">
+    <svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+    급속교정
+  </a>
+  <a href="#" aria-current="page">
+    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M9 11.5 11 13l3.5-3.5"/></svg>
+    AI마케팅
+  </a>
+  <a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.2-3.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+    문의
+  </a>
+</nav>
+</body>
+</html>
