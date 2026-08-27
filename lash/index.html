@@ -112,6 +112,14 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .mosnote{font-size:.72rem;color:var(--faint);text-align:center;margin:12px 0 0}
 
 /* curriculum */
+.curr details{border-top:1px solid var(--line)}
+.curr details:last-child{border-bottom:1px solid var(--line)}
+.curr summary{display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:baseline;padding:17px 0;cursor:pointer;list-style:none;font-weight:800;font-size:1rem;letter-spacing:-.01em}
+.curr summary::-webkit-details-marker{display:none}
+.curr summary .n{font-family:var(--font-en);font-weight:500;font-size:.8rem;color:var(--faint);font-variant-numeric:tabular-nums}
+.curr summary .ind{font-family:var(--font-en);font-weight:500;color:var(--faint);transition:transform .25s var(--ease)}
+.curr details[open] summary .ind{transform:rotate(45deg)}
+.curr details p{margin:0;padding:0 24px 18px 48px;color:var(--dim);font-size:.88rem;max-width:32em}
 .curr{display:flex;flex-direction:column;margin-top:44px}
 .cu{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--line)}
 .cu:last-child{border-bottom:1px solid var(--line)}
@@ -299,38 +307,20 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
 <section class="wrap" id="curriculum">
   <span class="eyebrow">Curriculum</span>
   <h2 class="st">시술 흐름 그대로,<br>11단계 상세 교정</h2>
-  <p class="ss">상담부터 마무리 멘트까지. 흐름의 어느 지점에서 막히든, 거기서부터 잡습니다.</p>
+  <p class="ss">상담부터 마무리 멘트까지. 흐름의 어느 지점에서 막히든, 거기서부터 잡습니다.<br>궁금한 단계를 눌러 펼쳐보세요.</p>
   <div class="curr">
-    <div class="cu"><div class="n">01</div><div><h4>상담 및 사진 촬영</h4><p>눈매를 빠르게 읽고, 고객의 기대치를 맞추는 설계 상담법을 배웁니다.</p></div></div>
-    <div class="cu"><div class="n">02</div><div><h4>클렌징 및 전처리</h4><p>모질을 파악하고, 그에 맞는 전처리를 하는 방법을 익힙니다.</p></div></div>
-    <div class="cu"><div class="n">03</div><div><h4>테이핑 및 연화롯드</h4><p>어떤 눈매가 와도 흔들리지 않는 테이핑법을 배웁니다.</p></div></div>
-    <div class="cu"><div class="n">04</div><div><h4>물광 레이어링 연화법</h4><p>시간이 아니라 모발 상태로 연화를 판단하는 원리를 공개합니다.</p></div></div>
-    <div class="cu"><div class="n">05</div><div><h4>디자인 롯드 교체</h4><p>정확한 롯드 부착 위치와, 교체 시 생기는 결 정리 실수를 차단하는 법을 배웁니다.</p></div></div>
-    <div class="cu"><div class="n">06</div><div><h4>산화</h4><p>컬이 꺾이지 않게 만드는 산화 과정의 원리를 알려드립니다.</p></div></div>
-    <div class="cu"><div class="n">07</div><div><h4>중화</h4><p>컬이 꺾이고 모발이 손상되는 원인을 없애는, 중화가 필수인 이유를 배웁니다.</p></div></div>
-    <div class="cu"><div class="n">08</div><div><h4>클렌징 및 마무리</h4><p>손님이 거울을 보기 전에 내가 먼저 확인하는 깔끔한 마무리를 만듭니다.</p></div></div>
-    <div class="cu"><div class="n">09</div><div><h4>세럼 도포 및 결 정리</h4><p>예쁜 결 정리를 만드는 세럼 활용법을 배웁니다.</p></div></div>
-    <div class="cu"><div class="n">10</div><div><h4>사진 촬영</h4><p>결과물을 마케팅 자산으로 만드는 촬영과 보정 방법을 배웁니다.</p></div></div>
-    <div class="cu"><div class="n">11</div><div><h4>안내 및 마무리</h4><p>손님이 나가는 순간이 다음 예약의 시작입니다. 재방문을 만드는 마무리 멘트를 갖게 됩니다.</p></div></div>
+    <details class="cx"><summary><span class="n">01</span><span class="t">상담 및 사진 촬영</span><span class="ind">+</span></summary><p>눈매를 빠르게 읽고, 고객의 기대치를 맞추는 설계 상담법을 배웁니다.</p></details>
+    <details class="cx"><summary><span class="n">02</span><span class="t">클렌징 및 전처리</span><span class="ind">+</span></summary><p>모질을 파악하고, 그에 맞는 전처리를 하는 방법을 익힙니다.</p></details>
+    <details class="cx"><summary><span class="n">03</span><span class="t">테이핑 및 연화롯드</span><span class="ind">+</span></summary><p>어떤 눈매가 와도 흔들리지 않는 테이핑법을 배웁니다.</p></details>
+    <details class="cx"><summary><span class="n">04</span><span class="t">물광 레이어링 연화법</span><span class="ind">+</span></summary><p>시간이 아니라 모발 상태로 연화를 판단하는 원리를 공개합니다.</p></details>
+    <details class="cx"><summary><span class="n">05</span><span class="t">디자인 롯드 교체</span><span class="ind">+</span></summary><p>정확한 롯드 부착 위치와, 교체 시 생기는 결 정리 실수를 차단하는 법을 배웁니다.</p></details>
+    <details class="cx"><summary><span class="n">06</span><span class="t">산화</span><span class="ind">+</span></summary><p>컬이 꺾이지 않게 만드는 산화 과정의 원리를 알려드립니다.</p></details>
+    <details class="cx"><summary><span class="n">07</span><span class="t">중화</span><span class="ind">+</span></summary><p>컬이 꺾이고 모발이 손상되는 원인을 없애는, 중화가 필수인 이유를 배웁니다.</p></details>
+    <details class="cx"><summary><span class="n">08</span><span class="t">클렌징 및 마무리</span><span class="ind">+</span></summary><p>손님이 거울을 보기 전에 내가 먼저 확인하는 깔끔한 마무리를 만듭니다.</p></details>
+    <details class="cx"><summary><span class="n">09</span><span class="t">세럼 도포 및 결 정리</span><span class="ind">+</span></summary><p>예쁜 결 정리를 만드는 세럼 활용법을 배웁니다.</p></details>
+    <details class="cx"><summary><span class="n">10</span><span class="t">사진 촬영</span><span class="ind">+</span></summary><p>결과물을 마케팅 자산으로 만드는 촬영과 보정 방법을 배웁니다.</p></details>
+    <details class="cx"><summary><span class="n">11</span><span class="t">안내 및 마무리</span><span class="ind">+</span></summary><p>손님이 나가는 순간이 다음 예약의 시작입니다. 재방문을 만드는 마무리 멘트를 갖게 됩니다.</p></details>
   </div>
-</section>
-
-<section class="wrap">
-  <span class="eyebrow">What's included</span>
-  <h2 class="st">전 과정 공통<br>포함 사항</h2>
-  <p class="ss">준비물은 챙기지 않으셔도 됩니다. 재료와 실습 모델까지 전부 제가 준비해둘게요.</p>
-  <ul class="inc">
-    <li><span class="k">✓</span><span>사전 문제점 체크 및 상담</span></li>
-    <li><span class="k">✓</span><span>100% 직접 실습</span></li>
-    <li><span class="k">✓</span><span>핵심 포인트 이론</span></li>
-    <li><span class="k">✓</span><span>4초 눈매 분석 방법</span></li>
-    <li><span class="k">✓</span><span>유지력 8주, 물광 연화법</span></li>
-    <li><span class="k">✓</span><span>발색 2배 블랙 틴팅 비법 전수</span></li>
-    <li><span class="k">✓</span><span>디플로마 수료증 발급</span></li>
-    <li><span class="k">✓</span><span>밀착 1:1 코칭</span></li>
-    <li><span class="k">✓</span><span>실습 재료 100% 지원</span></li>
-    <li><span class="k">✓</span><span>실습 모델 섭외 및 지원</span></li>
-  </ul>
 </section>
 
 <section class="wrap">
@@ -375,6 +365,19 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
 <section class="wide" style="padding-top:28px">
   <span class="eyebrow">Pricing</span>
   <h2 class="st">수강료</h2>
+  <p class="ss">전 과정 공통 포함입니다. 재료와 실습 모델까지 전부 제가 준비해둘게요.</p>
+  <ul class="inc">
+    <li><span class="k">✓</span><span>사전 문제점 체크 및 상담</span></li>
+    <li><span class="k">✓</span><span>100% 직접 실습</span></li>
+    <li><span class="k">✓</span><span>핵심 포인트 이론</span></li>
+    <li><span class="k">✓</span><span>4초 눈매 분석 방법</span></li>
+    <li><span class="k">✓</span><span>유지력 8주, 물광 연화법</span></li>
+    <li><span class="k">✓</span><span>발색 2배 블랙 틴팅 비법 전수</span></li>
+    <li><span class="k">✓</span><span>디플로마 수료증 발급</span></li>
+    <li><span class="k">✓</span><span>밀착 1:1 코칭</span></li>
+    <li><span class="k">✓</span><span>실습 재료 100% 지원</span></li>
+    <li><span class="k">✓</span><span>실습 모델 섭외 및 지원</span></li>
+  </ul>
   <div class="pg">
     <div class="pc">
       <div class="tag">Basic</div>
