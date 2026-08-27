@@ -105,6 +105,12 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .sp h3{margin:0 0 8px;font-size:1.16rem;font-weight:800;letter-spacing:-.01em}
 .sp p{margin:0;color:var(--dim);font-size:.92rem;max-width:32em}
 
+/* mosaic */
+.mosaic{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:36px}
+.mosaic img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
+@media(min-width:700px){.mosaic{grid-template-columns:repeat(6,1fr)}}
+.mosnote{font-size:.72rem;color:var(--faint);text-align:center;margin:12px 0 0}
+
 /* curriculum */
 .curr{display:flex;flex-direction:column;margin-top:44px}
 .cu{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:26px 0;border-top:1px solid var(--line)}
@@ -162,8 +168,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:32px 22px 8px;margin:0 -22px;-webkit-overflow-scrolling:touch}
 .rail::-webkit-scrollbar{height:0}
 .rail img{flex:0 0 62%;max-width:250px;scroll-snap-align:center;border-radius:12px;border:1px solid var(--line);height:auto}
-.rail.crop img{aspect-ratio:3/4;object-fit:cover}
-@media(min-width:700px){.rail{flex-wrap:wrap;overflow-x:visible;scroll-snap-type:none;row-gap:12px}.rail img{flex:0 0 calc(25% - 9px);max-width:none;scroll-snap-align:none}.rail.crop img{flex:0 0 calc(33.333% - 8px)}.railnote{display:none}}
+@media(min-width:700px){.rail{flex-wrap:wrap;overflow-x:visible;scroll-snap-type:none;row-gap:12px}.rail img{flex:0 0 calc(25% - 9px);max-width:none;scroll-snap-align:none}.railnote{display:none}}
 .railnote{font-size:.74rem;color:var(--faint);text-align:center;margin-top:16px}
 
 .cross{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1px solid var(--line);border-radius:14px;font-size:.9rem;color:var(--dim);transition:border-color .35s var(--ease),background .35s var(--ease)}
@@ -275,8 +280,8 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
   <h2 class="st">보고만 있는 시간은<br><em>없습니다</em></h2>
   <p class="ss">실제 수업 현장입니다. 처음부터 끝까지, 원장님 손이 움직입니다.</p>
 </section>
-<div class="wide" style="padding-bottom:24px">
-  <div class="rail crop">
+<div class="wrap" style="padding-bottom:24px">
+  <div class="mosaic">
     <img src="../assets/img/cls8.jpg" alt="수강생이 트위저로 직접 실습하는 모습" loading="lazy">
     <img src="../assets/img/cls2.jpg" alt="수강생이 연화 브러시로 직접 실습하는 모습" loading="lazy">
     <img src="../assets/img/cls5.jpg" alt="실습 중인 수업 현장" loading="lazy">
@@ -284,7 +289,7 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
     <img src="../assets/img/cls10.jpg" alt="실습 결과" loading="lazy">
     <img src="../assets/img/cls6.jpg" alt="실습 결과" loading="lazy">
   </div>
-  <p class="railnote">← 옆으로 밀어서 더 보기 → · 모든 사진은 동의 하에 게시합니다</p>
+  <p class="mosnote">모든 사진은 동의 하에 게시합니다</p>
 </div>
 
 <section class="wrap" id="curriculum">
