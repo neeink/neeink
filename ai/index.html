@@ -6,7 +6,7 @@
 <title>AI 마케팅 클래스 | 니잉 뷰티업 교육</title>
 <meta name="description" content="AI로 초상권은 지키고, 포트폴리오는 제대로 보여주세요. 오프라인 3~5시간, 50만원부터.">
 <meta name="theme-color" content="#0b0b0a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%230b0b0a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2217%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23f0ede6%22 font-family=%22sans-serif%22%3E%EB%8B%88%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="../assets/img/hero.webp">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI 마케팅 클래스 | 니잉 뷰티업 교육">
 <meta property="og:description" content="AI로 초상권은 지키고, 포트폴리오는 제대로 보여주세요. 오프라인 3~5시간, 50만원부터.">
@@ -86,6 +86,11 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .gn .a{font-weight:800;font-size:1rem;letter-spacing:-.01em;margin-bottom:7px}
 .gn .b{color:var(--dim);font-size:.9rem;max-width:34em}
 
+/* before & after */
+.ba{display:flex;flex-direction:column;gap:14px;margin-top:44px}
+.ba img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.ba-note{font-size:.8rem;color:var(--faint);text-align:center;margin-top:16px}
+
 /* why not */
 .nope{list-style:none;margin:40px 0 0;padding:0;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:var(--elev);padding:8px clamp(22px,5vw,32px)}
 .nope li{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:baseline;padding:22px 0;border-top:1px solid var(--line);font-size:.95rem;color:var(--text)}
@@ -105,6 +110,13 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .shout .last{margin:38px 0 0;padding-top:40px;border-top:1px solid var(--line);font-size:clamp(1.2rem,4.4vw,1.6rem);line-height:1.5;letter-spacing:-.02em;font-weight:800;color:var(--text);word-break:keep-all}
 .shout .last b{color:var(--c);font-weight:800}
 
+/* reviews rail */
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:32px 22px 8px;margin:0 -22px;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{height:0}
+.rail img{flex:0 0 72%;max-width:300px;scroll-snap-align:center;border-radius:12px;border:1px solid var(--line);height:auto}
+@media(min-width:700px){.rail img{flex:0 0 32%}}
+.railnote{font-size:.76rem;color:var(--faint);text-align:center;margin:10px 0 0}
+
 /* format rows */
 .spec{margin-top:40px;display:flex;flex-direction:column}
 .spec .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:19px 0;border-top:1px dotted var(--line-strong);font-size:.92rem}
@@ -112,6 +124,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .spec .r dt{color:var(--faint)}
 .spec .r dd{margin:0;text-align:right}
 .spec .r dd b{font-family:var(--font-en);font-weight:700;font-size:1.1rem;font-variant-numeric:tabular-nums}
+.spec .r dd .sub{display:block;font-size:.77rem;color:var(--faint);margin-top:4px;font-weight:400}
 
 /* pricing */
 .pg{display:grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
@@ -199,6 +212,18 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
 </section>
 
 <section class="wrap">
+  <span class="eyebrow">Before &amp; After</span>
+  <h2 class="st">작업 결과물은 그대로,<br>얼굴만 <em>바뀝니다</em></h2>
+  <p class="ss">단 1%의 변형 없이, 완벽하게 작업 결과물을 유지할 수 있습니다.</p>
+  <div class="ba">
+    <figure style="margin:0"><img src="../assets/img/ba1.jpg" alt="마스크로 가린 고객 사진과 AI로 얼굴을 바꾼 사진 비교" loading="lazy"></figure>
+    <figure style="margin:0"><img src="../assets/img/ba2.jpg" alt="스티커로 가린 고객 사진과 AI로 얼굴을 바꾼 사진 비교" loading="lazy"></figure>
+    <figure style="margin:0"><img src="../assets/img/ba3.jpg" alt="이모지로 가린 고객 사진과 AI로 얼굴을 바꾼 사진 비교" loading="lazy"></figure>
+  </div>
+  <p class="ba-note">모든 사진은 고객 동의 하에, 얼굴을 AI로 변환하여 사용합니다.</p>
+</section>
+
+<section class="wrap">
   <span class="eyebrow">Why not</span>
   <h2 class="st">혼자 찾아서 해보면<br><em>되지 않나요?</em></h2>
   <p class="ss">전자책도 보고 인스타에 떠도는 정보로도 해보신 원장님들이,<br>수업에 오셔서 하시는 말씀입니다.</p>
@@ -266,13 +291,40 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
 </section>
 
 <section class="wrap">
+  <span class="eyebrow">Reviews</span>
+  <h2 class="st">먼저 들으신 원장님들의<br>리얼 후기입니다</h2>
+  <p class="ss">과장 없이, 수업 직후 보내주신 카톡을 그대로 담았습니다.</p>
+</section>
+<div class="wide" style="padding-bottom:24px">
+  <div class="rail">
+    <img src="../assets/img/airev1.jpg" alt="AI 마케팅 클래스 수강 후기 1" loading="lazy">
+    <img src="../assets/img/airev2.jpg" alt="AI 마케팅 클래스 수강 후기 2" loading="lazy">
+    <img src="../assets/img/airev3.jpg" alt="AI 마케팅 클래스 수강 후기 3" loading="lazy">
+    <img src="../assets/img/airev4.jpg" alt="AI 마케팅 클래스 수강 후기 4" loading="lazy">
+    <img src="../assets/img/airev5.jpg" alt="AI 마케팅 클래스 수강 후기 5" loading="lazy">
+    <img src="../assets/img/airev6.jpg" alt="AI 마케팅 클래스 수강 후기 6" loading="lazy">
+    <img src="../assets/img/airev7.jpg" alt="AI 마케팅 클래스 수강 후기 7" loading="lazy">
+    <img src="../assets/img/airev8.jpg" alt="AI 마케팅 클래스 수강 후기 8" loading="lazy">
+    <img src="../assets/img/airev9.jpg" alt="AI 마케팅 클래스 수강 후기 9" loading="lazy">
+    <img src="../assets/img/airev10.jpg" alt="AI 마케팅 클래스 수강 후기 10" loading="lazy">
+    <img src="../assets/img/airev11.jpg" alt="AI 마케팅 클래스 수강 후기 11" loading="lazy">
+  </div>
+  <p class="railnote">← 옆으로 밀어서 더 보기 →</p>
+</div>
+
+<section class="wrap">
   <span class="eyebrow">Format</span>
   <h2 class="st">진행 방식</h2>
   <dl class="spec">
-    <div class="r"><dt>진행</dt><dd>오프라인 · 신논현 스튜디오</dd></div>
+    <div class="r"><dt>진행</dt><dd>오프라인</dd></div>
+    <div class="r"><dt>장소</dt><dd>강남대로106길 18, 2층<span class="sub">역삼동 812-1 · 신논현</span></dd></div>
     <div class="r"><dt>인원</dt><dd>3:1 그룹 또는 1:1</dd></div>
     <div class="r"><dt>수업 시간</dt><dd>그룹 <b>3</b>시간 · 1:1 <b>5</b>시간</dd></div>
     <div class="r"><dt>회차</dt><dd><b>1</b>회 완성</dd></div>
+    <div class="r"><dt>사용 도구</dt><dd>수업에서 안내</dd></div>
+    <div class="r"><dt>준비물</dt><dd>노트북 또는 태블릿</dd></div>
+    <div class="r"><dt>일정</dt><dd>문의 후 개별 조율</dd></div>
+    <div class="r"><dt>수료 후 피드백</dt><dd>카카오톡</dd></div>
   </dl>
 </section>
 
@@ -292,7 +344,7 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
         <li><span class="t"><b>베이직</b> 동영상 만드는 방법</span></li>
         <li><span class="t">프롬프트 작성법</span></li>
         <li><span class="t"><b>기본</b> 프롬프트 제공</span></li>
-        <li><span class="t">피드백 기간 <b>1개월</b></span></li>
+        <li><span class="t">카톡 피드백 <b>1개월</b></span></li>
       </ul>
       <div class="foot">
         <div class="amt">50<small>만원</small></div>
@@ -314,7 +366,7 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
         <li><span class="t"><b>프리미엄</b> 동영상 만드는 방법</span></li>
         <li><span class="t">프롬프트 작성법</span></li>
         <li><span class="t"><b>맞춤</b> 프롬프트 제공</span></li>
-        <li><span class="t">피드백 기간 <b>1년</b></span></li>
+        <li><span class="t">카톡 피드백 <b>1년</b></span></li>
       </ul>
       <div class="foot">
         <div class="amt">100<small>만원</small></div>
@@ -337,7 +389,7 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
   <h2>더 이상 숨기지 마세요.<br><em>보여줘야</em> 팔립니다.</h2>
   <p>지금 계정 상황을 말씀해주시면, 어디부터 손볼지 알려드릴게요.</p>
   <a class="pill solid" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">카카오톡으로 문의하기</a>
-  <div class="fine">AI 마케팅 클래스 · 니잉<br>서울 강남구 신논현</div>
+  <div class="fine">AI 마케팅 클래스 · 니잉<br>서울 강남구 강남대로106길 18, 2층 (역삼동 812-1)</div>
 </section>
 
 <nav class="tab">
