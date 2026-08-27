@@ -117,6 +117,10 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 @media(min-width:700px){.rail{flex-wrap:wrap;overflow-x:visible;scroll-snap-type:none;row-gap:12px}.rail img{flex:0 0 calc(25% - 9px);max-width:none;scroll-snap-align:none}.railnote{display:none}}
 .railnote{font-size:.76rem;color:var(--faint);text-align:center;margin:10px 0 0}
 
+/* mosaic */
+.mosaic{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:36px}
+.mosaic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
+
 /* format rows */
 .spec{margin-top:40px;display:flex;flex-direction:column}
 .spec .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:19px 0;border-top:1px dotted var(--line-strong);font-size:.92rem}
@@ -295,21 +299,19 @@ nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
   <h2 class="st">먼저 들으신 원장님들의<br>리얼 후기입니다</h2>
   <p class="ss">과장 없이, 수업 직후 보내주신 카톡을 그대로 담았습니다.</p>
 </section>
-<div class="wide" style="padding-bottom:24px">
-  <div class="rail">
-    <img src="../assets/img/airev1.jpg" alt="AI 마케팅 클래스 수강 후기 1" loading="lazy">
-    <img src="../assets/img/airev2.jpg" alt="AI 마케팅 클래스 수강 후기 2" loading="lazy">
-    <img src="../assets/img/airev3.jpg" alt="AI 마케팅 클래스 수강 후기 3" loading="lazy">
-    <img src="../assets/img/airev4.jpg" alt="AI 마케팅 클래스 수강 후기 4" loading="lazy">
-    <img src="../assets/img/airev5.jpg" alt="AI 마케팅 클래스 수강 후기 5" loading="lazy">
-    <img src="../assets/img/airev6.jpg" alt="AI 마케팅 클래스 수강 후기 6" loading="lazy">
-    <img src="../assets/img/airev7.jpg" alt="AI 마케팅 클래스 수강 후기 7" loading="lazy">
-    <img src="../assets/img/airev8.jpg" alt="AI 마케팅 클래스 수강 후기 8" loading="lazy">
-    <img src="../assets/img/airev9.jpg" alt="AI 마케팅 클래스 수강 후기 9" loading="lazy">
-    <img src="../assets/img/airev10.jpg" alt="AI 마케팅 클래스 수강 후기 10" loading="lazy">
-    <img src="../assets/img/airev11.jpg" alt="AI 마케팅 클래스 수강 후기 11" loading="lazy">
+<div class="wrap" style="padding-bottom:24px">
+  <div class="mosaic">
+    <img src="../assets/img/airev9.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev10.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev4.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev8.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev5.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev3.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev11.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev6.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev1.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
+    <img src="../assets/img/airev2.jpg" alt="AI 마케팅 클래스 수강 후기" loading="lazy">
   </div>
-  <p class="railnote">← 옆으로 밀어서 더 보기 →</p>
 </div>
 
 <section class="wrap">
