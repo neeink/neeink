@@ -6,6 +6,8 @@
 <title>AI 마케팅 클래스 | 니잉 뷰티업 교육</title>
 <meta name="description" content="AI로 초상권은 지키고, 포트폴리오는 제대로 보여주세요. 오프라인 3~5시간, 50만원부터.">
 <meta name="theme-color" content="#0b0b0a">
+<link rel="preload" href="../assets/fonts/Freesentation-4Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../assets/fonts/Freesentation-8ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="icon" href="../assets/img/hero.webp">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI 마케팅 클래스 | 니잉 뷰티업 교육">
@@ -45,7 +47,7 @@ header.top{position:sticky;top:0;z-index:40;background:rgba(11,11,10,.86);backdr
 .top-in .bk:hover{color:var(--text)}
 
 .hero{padding-top:78px;padding-bottom:72px;text-align:center;border-bottom:1px solid var(--line)}
-.hero .kicker{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-en);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:26px;padding:6px 14px;border:1px solid var(--line-strong);border-radius:999px}
+.hero .kicker{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-en);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:26px;padding:6px 14px;border:1px solid var(--line-strong);border-radius:999px}
 .hero .kicker i{width:6px;height:6px;border-radius:50%;background:var(--c)}
 .hero h1{font-weight:800;font-size:clamp(1.38rem,6vw,2.8rem);line-height:1.44;letter-spacing:-.03em;margin:0 0 22px;word-break:keep-all}
 .hero h1 em{font-style:italic;font-weight:800}
@@ -88,7 +90,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 
 /* before & after */
 .ba{display:flex;flex-direction:column;gap:14px;margin-top:44px}
-.ba img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.ba img{display:block;width:100%;height:auto;aspect-ratio:1600/1000;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
 .ba-note{font-size:.8rem;color:var(--faint);text-align:center;margin-top:16px}
 
 /* why not */
@@ -137,7 +139,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .pc:hover{border-color:var(--line-strong);background:var(--elev-2)}
 .pc.hi{background:var(--text);color:var(--ground);border-color:var(--text)}
 .pc.hi:hover{background:var(--text)}
-.pc .tag{font-family:var(--font-en);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:12px}
+.pc .tag{font-family:var(--font-en);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:12px}
 .pc.hi .tag{color:rgba(11,11,10,.5)}
 .pc .nm{font-weight:800;font-size:1.24rem;letter-spacing:-.01em;margin-bottom:6px}
 .pc .meta{font-size:.84rem;color:var(--faint);margin-bottom:22px}
@@ -163,7 +165,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .pc.hi .btn{background:var(--ground);color:var(--text)}
 
 .soon{margin-top:20px;border:1px dashed var(--line-strong);border-radius:14px;padding:22px 24px;display:flex;gap:14px;align-items:flex-start;font-size:.88rem;color:var(--dim);line-height:1.7}
-.soon .bd{font-family:var(--font-en);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-strong);border-radius:999px;padding:4px 11px;color:var(--text);flex-shrink:0;margin-top:2px}
+.soon .bd{font-family:var(--font-en);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-strong);border-radius:999px;padding:4px 11px;color:var(--text);flex-shrink:0;margin-top:2px}
 
 .cross{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border:1px solid var(--line);border-radius:14px;font-size:.9rem;color:var(--dim);transition:border-color .35s var(--ease),background .35s var(--ease)}
 .cross:hover{border-color:var(--line-strong);background:var(--elev)}
