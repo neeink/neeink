@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>래쉬애딕트마스터 · 마스터크루 | 니잉</title>
+<meta name="description" content="속눈썹·눈썹·모발 세럼 3종 도입과 판매 교육. 200여 명의 원장님이 함께하는 마스터크루.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="../assets/fonts/Freesentation-4Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../assets/fonts/Freesentation-8ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="icon" href="../assets/img/hero.webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="래쉬애딕트마스터 · 마스터크루 | 니잉">
+<meta property="og:description" content="속눈썹·눈썹·모발 세럼 3종 도입과 판매 교육. 200여 명의 원장님이 함께하는 마스터크루.">
+<meta property="og:image" content="https://neeink.vercel.app/assets/img/crew_product1.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@font-face{font-family:'Freesentation';src:url(../assets/fonts/Freesentation-4Regular.ttf) format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Freesentation';src:url(../assets/fonts/Freesentation-8ExtraBold.ttf) format('truetype');font-weight:800;font-display:swap}
+
+:root{
+  --bg:#ffffff;--bg-soft:#f6f6f8;--bg-soft-2:#eef0f3;
+  --ink:#111111;--dim:#55565d;--faint:#93949c;
+  --line:#e6e7eb;--line-strong:#d3d5db;
+  --accent:#0057ff;--accent-dim:#eaf0ff;
+  --ease:cubic-bezier(.19,1,.22,1);
+  --nav-h:60px;--cta-h:58px;
+  --font-kr:'Freesentation',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+  --font-en:'Space Grotesk','Freesentation',sans-serif;
+  --r-card:14px;--r-lg:18px;--r-pill:999px;--r-img:12px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-kr);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;padding-bottom:calc(var(--cta-h) + 22px + env(safe-area-inset-bottom))}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+em{font-style:italic;font-weight:800;color:var(--accent);padding-right:.1em}
+img{max-width:100%;display:block}
+.wrap{max-width:760px;margin:0 auto;padding-left:22px;padding-right:22px}
+.wide{max-width:960px;margin:0 auto;padding-left:22px;padding-right:22px}
+
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:12px 22px;gap:10px}
+.mark{font-weight:800;font-size:1.08rem;letter-spacing:-.02em;flex-shrink:0}
+.mark sup{font-family:var(--font-en);font-size:.5em;font-weight:500;color:var(--faint);vertical-align:super;margin-left:2px}
+nav.gnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.gnav::-webkit-scrollbar{display:none}
+nav.gnav a{font-size:.78rem;font-weight:700;color:var(--dim);padding:9px 11px;border-radius:999px;min-height:40px;display:flex;align-items:center;white-space:nowrap;transition:color .2s var(--ease),background .2s var(--ease)}
+nav.gnav a:hover{color:var(--ink)}
+nav.gnav a[aria-current="page"]{color:var(--accent);background:var(--accent-dim)}
+
+.hero{padding-top:56px;padding-bottom:44px;text-align:center}
+.hero .kicker{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-en);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:22px;padding:6px 14px;border:1px solid var(--line-strong);border-radius:999px}
+.hero .kicker i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.hero h1{font-weight:800;font-size:clamp(1.42rem,6vw,2.5rem);line-height:1.46;letter-spacing:-.03em;margin:0 0 18px}
+.hero p{color:var(--dim);font-size:clamp(.95rem,2.7vw,1.05rem);max-width:27em;margin:0 auto 28px;line-height:1.75}
+.pills{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:13px 24px;min-height:40px;border-radius:999px;font-weight:800;font-size:.9rem;border:1px solid var(--line-strong);transition:all .3s var(--ease)}
+.pill.solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pill.solid:hover{opacity:.88}
+.pill.line{color:var(--ink)}
+.pill.line:hover{border-color:var(--ink);background:var(--bg-soft)}
+
+.shot{width:100%;max-height:400px;object-fit:cover;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof{display:flex;justify-content:center;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof .cell{flex:1 1 33.33%;padding:22px 12px;text-align:center;border-right:1px solid var(--line)}
+.proof .cell:last-child{border-right:none}
+.proof .n{font-family:var(--font-en);font-weight:700;font-size:1.5rem;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.proof .l{font-size:.72rem;color:var(--faint);margin-top:6px}
+
+section{padding-top:clamp(68px,10vw,100px);padding-bottom:clamp(44px,6vw,60px)}
+.eyebrow{font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:22px}
+h2.st{font-weight:800;font-size:clamp(1.4rem,5vw,2rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 18px}
+p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
+
+/* reviews / proof grid + lightbox */
+.revgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:32px}
+@media(min-width:560px){.revgrid{grid-template-columns:repeat(4,1fr)}}
+.revgrid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-img);border:1px solid var(--line);cursor:zoom-in}
+.revgrid .extra{display:none}
+.revgrid.show-all .extra{display:block}
+@media(min-width:560px){.revgrid.three{grid-template-columns:repeat(3,1fr)}}
+.rv-more{display:block;margin:16px auto 0;padding:10px 20px;min-height:40px;border-radius:999px;border:1px solid var(--line-strong);background:var(--bg);color:var(--ink);font-weight:700;font-size:.85rem}
+.rv-more:hover{border-color:var(--ink)}
+.lightbox{position:fixed;inset:0;background:rgba(10,10,12,.92);display:none;align-items:center;justify-content:center;z-index:200;padding:26px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:8px;cursor:default}
+.lb-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:1.15rem;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
+
+/* highlight callout */
+.hlbox{margin-top:36px;border:2px solid var(--accent);border-radius:var(--r-lg);background:var(--accent-dim);padding:clamp(24px,5vw,32px);text-align:center}
+.hlbox .big{font-weight:800;font-size:clamp(1.1rem,4vw,1.45rem);line-height:1.55;color:var(--ink);margin:0}
+.hlbox .big b{color:var(--accent)}
+.hlbox p.sub{margin:10px 0 0;color:var(--dim);font-size:.9rem}
+
+/* gains / benefit list */
+.gain{display:flex;flex-direction:column;margin-top:36px}
+.gn{display:grid;grid-template-columns:24px 1fr;gap:10px;padding:22px 0;border-top:1px solid var(--line);align-items:baseline}
+.gn:last-child{border-bottom:1px solid var(--line)}
+.gn>i{color:var(--accent);font-style:normal;font-family:var(--font-en);font-size:.82rem}
+.gn .a{font-weight:800;font-size:1rem;letter-spacing:-.01em;margin-bottom:6px}
+.gn .b{color:var(--dim);font-size:.9rem;max-width:34em}
+
+/* pull quote */
+.pullquote{margin-top:28px;border-left:3px solid var(--accent);padding:4px 0 4px 18px}
+.pullquote p{margin:0;color:var(--dim);font-size:.92rem;line-height:1.8;max-width:32em}
+.pullquote .src{display:block;margin-top:8px;font-size:.76rem;color:var(--faint)}
+
+/* founder story shout */
+.shout{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--bg-soft);padding:clamp(32px,7vw,48px) 24px;text-align:center;margin-top:36px}
+.shout .lead{font-size:.85rem;color:var(--faint);margin:0 0 20px;letter-spacing:.02em}
+.shout .big{font-weight:800;font-size:clamp(1.05rem,3.8vw,1.4rem);line-height:1.65;letter-spacing:-.02em;margin:0;color:var(--ink)}
+.shout .rule{border:none;border-top:1px solid var(--line-strong);width:38px;margin:26px auto}
+.shout .body{margin:16px 0 0;color:var(--dim);font-size:clamp(.9rem,2.5vw,.98rem);line-height:1.8}
+.shout .last{margin:32px 0 0;padding-top:34px;border-top:1px solid var(--line);font-size:clamp(1.05rem,3.6vw,1.3rem);line-height:1.5;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+.shout .last b{color:var(--accent)}
+
+/* worry / nope list */
+.nope{list-style:none;margin:32px 0 0;padding:6px clamp(20px,5vw,30px);display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r-lg);background:var(--bg-soft)}
+.nope li{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line);font-size:.94rem;color:var(--ink)}
+.nope li:first-child{border-top:none}
+.nope li i{font-style:normal;font-family:var(--font-en);font-weight:700;font-size:1.4rem;color:var(--accent);opacity:.75}
+
+/* product grid */
+.prod{display:grid;grid-template-columns:1fr;gap:14px;margin-top:36px}
+@media(min-width:660px){.prod{grid-template-columns:1fr 1fr 1fr}}
+.pd{border:1px solid var(--line);border-radius:var(--r-card);overflow:hidden;background:var(--bg);transition:border-color .3s var(--ease)}
+.pd:hover{border-color:var(--line-strong)}
+.pd img{width:100%;aspect-ratio:4/5;object-fit:cover;border-bottom:1px solid var(--line)}
+.pd .in{padding:18px 18px 20px}
+.pd .tag{font-family:var(--font-en);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pd h4{margin:0 0 8px;font-size:1rem;font-weight:800;letter-spacing:-.01em}
+.pd p{margin:0;color:var(--dim);font-size:.86rem;line-height:1.65}
+.prod-note{margin-top:18px;font-size:.8rem;color:var(--faint);text-align:center}
+
+/* format rows */
+.spec{margin-top:36px;display:flex;flex-direction:column}
+.spec .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-top:1px dotted var(--line-strong);font-size:.92rem}
+.spec .r:first-child{border-top:none}
+.spec .r dt{color:var(--faint)}
+.spec .r dd{margin:0;text-align:right}
+.spec .r dd .sub{display:block;font-size:.76rem;color:var(--faint);margin-top:4px;font-weight:400}
+
+.close{text-align:center;padding-top:clamp(68px,10vw,100px);padding-bottom:56px}
+.close h2{font-weight:800;font-size:clamp(1.35rem,5vw,2rem);line-height:1.4;letter-spacing:-.02em;margin:0 0 12px}
+.close p{color:var(--dim);font-size:.94rem;margin:0 0 28px}
+.fine{margin-top:30px;font-size:.72rem;color:var(--faint);line-height:1.9}
+.fine a{text-decoration:underline;text-underline-offset:3px}
+.biz{margin-top:18px;font-size:.68rem;color:var(--faint);line-height:1.9}
+
+.cta-fixed{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--accent);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -2px 14px rgba(0,0,0,.08)}
+.cta-fixed a{display:flex;align-items:center;justify-content:center;height:42px;min-height:40px;color:#fff;font-weight:800;font-size:.92rem;letter-spacing:-.01em}
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="/">니잉<sup>®</sup></a>
+    <nav class="gnav">
+      <a href="/">홈</a>
+      <a href="/lash/">급속교정</a>
+      <a href="/ai/">AI 마케팅</a>
+      <a href="/crew/" aria-current="page">래쉬애딕트 도입</a>
+      <a href="/prompts/">자료공유</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <span class="kicker"><i></i>Lash addict Master Crew</span>
+  <h1>혼자 아침부터 밤 9시까지 시술하고,<br>정작 손에 남는 건 <em>얼마 안 되시죠?</em></h1>
+  <p>시술 매출에 제품 판매 매출을 더하는 길이 있습니다.<br>이미 200여 명의 원장님이 마스터크루에서 함께하고 있어요.</p>
+  <div class="pills">
+    <a class="pill solid" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">마스터크루 도입 상담하기</a>
+    <a class="pill line" href="#product">제품 먼저 보기</a>
+  </div>
+</section>
+
+<img class="shot" src="../assets/img/crew_proof4.jpg" alt="래쉬애딕트 그로우 세미나 현장 사진">
+
+<section class="wrap" style="padding-bottom:0">
+  <span class="eyebrow">Trust · Master Crew</span>
+  <h2 class="st">200여 명 원장님이<br>이미 <em>증명하고 있습니다</em></h2>
+  <p class="ss">최고 교육지사상을 수상했고, 매주 단톡방에는 원장님들이 직접 올리는 임상·판매 인증이 쌓입니다.</p>
+  <div class="revgrid three" id="revgridCrew">
+    <img class="rv" src="../assets/img/crew_proof1.jpg" data-full="../assets/img/crew_proof1.jpg" alt="마스터크루 단톡방 임상사진 인증 게시물" loading="lazy">
+    <img class="rv" src="../assets/img/crew_proof2.jpg" data-full="../assets/img/crew_proof2.jpg" alt="마스터크루 단톡방 첫 판매 인증 게시물" loading="lazy">
+    <img class="rv" src="../assets/img/crew_proof3.jpg" data-full="../assets/img/crew_proof3.jpg" alt="마스터크루 단톡방 제품 판매 후기 게시물" loading="lazy">
+  </div>
+</section>
+
+<div class="proof">
+  <div class="cell"><div class="n">200+</div><div class="l">마스터크루 원장님</div></div>
+  <div class="cell"><div class="n">수상</div><div class="l">최고 교육지사상</div></div>
+</div>
+
+<section class="wrap">
+  <span class="eyebrow">Results</span>
+  <h2 class="st">혼자서도<br>자신 있게 <em>설명하고, 판매합니다</em></h2>
+  <p class="ss">고객이 먼저 반응하는 순간이 판매가 됩니다.</p>
+  <div class="hlbox">
+    <p class="big">"성장제 바르니 속눈썹이 길어 보인다"는 고객의 말이,<br>그 자리에서 <b>판매</b>로 이어졌습니다</p>
+    <p class="sub">— 마스터크루 단톡방 인증 중. 고객이 먼저 변화를 알아보는 순간, 설명이 아니라 판매가 됩니다.</p>
+  </div>
+  <div class="gain">
+    <div class="gn"><i>✓</i><div><div class="a">영양제를 권하는 게 막막하지 않습니다</div><div class="b">어떤 고객에게 어떤 제품이 맞는지, 상담 흐름을 배워서 그대로 씁니다.</div></div></div>
+    <div class="gn"><i>✓</i><div><div class="a">전문가처럼 말할 수 있게 됩니다</div><div class="b">외우는 게 아니라 이해하는 방식으로 배우니, 상담할 때 말이 달라집니다.</div></div></div>
+    <div class="gn"><i>✓</i><div><div class="a">시술 매출 옆에 판매 매출이 생깁니다</div><div class="b">같은 시간, 같은 고객에게 한 줄 더 얹는 매출입니다.</div></div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">Why</span>
+  <h2 class="st">저도 처음엔<br>혼자 <em>공부했습니다</em></h2>
+  <div class="shout">
+    <p class="lead">니잉 대표 함수민의 이야기</p>
+    <p class="big">"저도 처음엔 혼자 공부했습니다.<br>영양제를 팔아보고 싶어도 제대로 배울 곳이 없었고,<br>궁금한 게 생겨도 물어볼 곳이 없었어요."</p>
+    <p class="body">그래서 니잉 마스터크루를 만들었습니다. 저 혼자 헤맸던 시간을, 원장님들은 겪지 않게 하려고요.</p>
+  </div>
+  <p class="ss" style="margin-top:36px">등록을 망설이게 하는 마음도 압니다. 크루 안에서 실제로 나오는 걱정들입니다.</p>
+  <ul class="nope">
+    <li><i>“</i><span>막상 등록하고 나면 관리 안 해주는 거 아니야?</span></li>
+    <li><i>“</i><span>혼자서도 잘 할 수 있을까?</span></li>
+    <li><i>“</i><span>제품, 진짜 다 판매할 수 있을까?</span></li>
+  </ul>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">How we fix it</span>
+  <h2 class="st">마스터크루가<br>드리는 것</h2>
+  <div class="gain">
+    <div class="gn"><i>✓</i><div><div class="a">단톡방 즉시 Q&amp;A</div><div class="b">궁금한 순간 바로 질문하면, 대부분 1분 안에 답이 옵니다.</div></div></div>
+    <div class="gn"><i>✓</i><div><div class="a">영양제 세미나 · 세일즈 특강</div><div class="b">제품 지식부터 상담 화법까지, 눈높이에 맞춘 특강을 받습니다.</div></div></div>
+    <div class="gn"><i>✓</i><div><div class="a">직접 제작한 상담 가이드</div><div class="b">외우지 않고 그대로 따라 하면 되는 상담 가이드를 드립니다.</div></div></div>
+    <div class="gn"><i>✓</i><div><div class="a">케이스 스터디</div><div class="b">다른 원장님들의 성공 사례와 시행착오를 함께 공유받습니다.</div></div></div>
+  </div>
+  <div class="hlbox">
+    <p class="big">도입이 <b>끝이 아니라 시작</b>입니다</p>
+    <p class="sub">등록 이후에도 단톡방과 특강, 케이스 스터디로 계속 이어지는 파트너십입니다.</p>
+  </div>
+</section>
+
+<section class="wrap" id="product">
+  <span class="eyebrow">Product</span>
+  <h2 class="st">soaddicted<br>래쉬애딕트마스터 3종</h2>
+  <p class="ss">매일 시술하는 니잉이 도입부터 판매 교육까지 함께 안내하는 제품입니다. 가격과 도입 조건은 상담으로 알려드려요.</p>
+  <div class="prod">
+    <div class="pd">
+      <img src="../assets/img/crew_product1.jpg" alt="LashAddict 속눈썹 세럼 제품 사진" loading="lazy">
+      <div class="in">
+        <div class="tag">Lash</div>
+        <h4>LashAddict</h4>
+        <p>속눈썹 세럼. 시술 후 고객 관리 루틴으로 이어서 권하기 좋습니다.</p>
+      </div>
+    </div>
+    <div class="pd">
+      <img src="../assets/img/crew_product2.jpg" alt="BrowAddict 눈썹 세럼 제품 사진" loading="lazy">
+      <div class="in">
+        <div class="tag">Brow</div>
+        <h4>BrowAddict</h4>
+        <p>눈썹 세럼. 속눈썹 시술 고객에게 함께 제안하기 좋은 제품입니다.</p>
+      </div>
+    </div>
+    <div class="pd">
+      <img src="../assets/img/crew_product3.jpg" alt="HairAddict 모발 세럼 제품 사진" loading="lazy">
+      <div class="in">
+        <div class="tag">Hair</div>
+        <h4>HairAddict</h4>
+        <p>모발 밀도 세럼. 새로운 판매 라인을 넓히고 싶은 원장님께 권합니다.</p>
+      </div>
+    </div>
+  </div>
+  <p class="prod-note">가격은 별도 공개하지 않습니다. 카카오톡 상담으로 안내해드립니다.</p>
+</section>
+
+<section class="wrap">
+  <span class="eyebrow">Format</span>
+  <h2 class="st">도입 상세</h2>
+  <dl class="spec">
+    <div class="r"><dt>발주 가능 시간</dt><dd>평일 오전 10:30 ~ 오후 3:00</dd></div>
+    <div class="r"><dt>상담 가능 시간</dt><dd>평일 오전 10:30 ~ 오후 7:00</dd></div>
+    <div class="r"><dt>문의</dt><dd>카카오톡 채널</dd></div>
+  </dl>
+</section>
+
+<section class="close wrap">
+  <h2>마스터크루,<br><em>지금 바로</em> 상담하세요</h2>
+  <p>제품 도입부터 크루 합류까지, 카카오톡 하나로 안내해드립니다.</p>
+  <a class="pill solid" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">마스터크루 도입 상담하기</a>
+  <div class="fine">니잉 · 매일 시술하고, 가르칩니다<br><a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C106%EA%B8%B8%2018" target="_blank" rel="noopener">서울 강남구 강남대로106길 18, 2층 (역삼동 812-1)</a><br><a href="https://www.instagram.com/neeink.woody/" target="_blank" rel="noopener">인스타그램 @neeink.woody</a></div>
+</section>
+
+<div class="cta-fixed">
+  <a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">마스터크루 도입 상담하기</a>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="닫기">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.rv').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = this.dataset.full;
+      lbImg.alt = this.alt;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', function(){ lb.classList.remove('open'); });
+  lbImg.addEventListener('click', function(e){ e.stopPropagation(); });
+  document.getElementById('lbClose').addEventListener('click', function(e){ e.stopPropagation(); lb.classList.remove('open'); });
+})();
+</script>
+
+</body>
+</html>

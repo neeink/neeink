@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>자료공유 | 니잉</title>
+<meta name="description" content="니잉이 쓰는 AI 프롬프트를 무료로 공유합니다. 복사해서 바로 써보세요.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preload" href="../assets/fonts/Freesentation-4Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../assets/fonts/Freesentation-8ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="icon" href="../assets/img/hero.webp">
+<meta property="og:type" content="website">
+<meta property="og:title" content="자료공유 | 니잉">
+<meta property="og:description" content="니잉이 쓰는 AI 프롬프트를 무료로 공유합니다. 복사해서 바로 써보세요.">
+<meta property="og:image" content="https://neeink.vercel.app/assets/img/prompt1.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@font-face{font-family:'Freesentation';src:url(../assets/fonts/Freesentation-4Regular.ttf) format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Freesentation';src:url(../assets/fonts/Freesentation-8ExtraBold.ttf) format('truetype');font-weight:800;font-display:swap}
+
+:root{
+  --bg:#ffffff;--bg-soft:#f6f6f8;--bg-soft-2:#eef0f3;
+  --ink:#111111;--dim:#55565d;--faint:#93949c;
+  --line:#e6e7eb;--line-strong:#d3d5db;
+  --accent:#0057ff;--accent-dim:#eaf0ff;
+  --ease:cubic-bezier(.19,1,.22,1);
+  --nav-h:60px;--cta-h:58px;
+  --font-kr:'Freesentation',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+  --font-en:'Space Grotesk','Freesentation',sans-serif;
+  --r-card:14px;--r-lg:18px;--r-pill:999px;--r-img:12px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-kr);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;padding-bottom:calc(var(--cta-h) + 22px + env(safe-area-inset-bottom))}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+em{font-style:italic;font-weight:800;color:var(--accent);padding-right:.1em}
+img{max-width:100%;display:block}
+.wrap{max-width:760px;margin:0 auto;padding-left:22px;padding-right:22px}
+
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:12px 22px;gap:10px}
+.mark{font-weight:800;font-size:1.08rem;letter-spacing:-.02em;flex-shrink:0}
+.mark sup{font-family:var(--font-en);font-size:.5em;font-weight:500;color:var(--faint);vertical-align:super;margin-left:2px}
+nav.gnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.gnav::-webkit-scrollbar{display:none}
+nav.gnav a{font-size:.78rem;font-weight:700;color:var(--dim);padding:9px 11px;border-radius:999px;min-height:40px;display:flex;align-items:center;white-space:nowrap;transition:color .2s var(--ease),background .2s var(--ease)}
+nav.gnav a:hover{color:var(--ink)}
+nav.gnav a[aria-current="page"]{color:var(--accent);background:var(--accent-dim)}
+
+.hero{padding-top:56px;padding-bottom:44px;text-align:center}
+.hero .kicker{display:inline-flex;align-items:center;gap:7px;font-family:var(--font-en);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-bottom:22px;padding:6px 14px;border:1px solid var(--line-strong);border-radius:999px}
+.hero .kicker i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.hero h1{font-weight:800;font-size:clamp(1.5rem,6.2vw,2.6rem);line-height:1.42;letter-spacing:-.03em;margin:0 0 18px}
+.hero p{color:var(--dim);font-size:clamp(.95rem,2.7vw,1.05rem);max-width:27em;margin:0 auto 0;line-height:1.75}
+
+.how{display:flex;justify-content:center;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.how .cell{flex:1 1 33.33%;padding:20px 12px;text-align:center;border-right:1px solid var(--line)}
+.how .cell:last-child{border-right:none}
+.how .n{font-family:var(--font-en);font-weight:700;font-size:.78rem;color:var(--accent);letter-spacing:.1em}
+.how .l{font-size:.8rem;color:var(--dim);margin-top:6px;line-height:1.5}
+
+section{padding-top:clamp(52px,8vw,76px);padding-bottom:clamp(36px,5vw,52px)}
+.eyebrow{font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:22px}
+h2.st{font-weight:800;font-size:clamp(1.4rem,5vw,2rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 18px}
+p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
+
+/* prompt cards */
+.pcard{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--bg);overflow:hidden;margin-top:28px}
+.pcard .ph{position:relative}
+.pcard .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;cursor:zoom-in}
+.pcard .ph .zoom{position:absolute;right:12px;bottom:12px;font-size:.7rem;color:#fff;background:rgba(10,10,12,.55);border-radius:999px;padding:5px 12px;pointer-events:none}
+@media(min-width:700px){
+  .pcard{display:grid;grid-template-columns:300px 1fr}
+  .pcard .ph img{height:100%;aspect-ratio:auto;min-height:100%}
+}
+.pcard .bd{padding:clamp(20px,4vw,28px)}
+.pcard .no{font-family:var(--font-en);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.pcard h3{margin:0 0 6px;font-size:1.1rem;font-weight:800;letter-spacing:-.01em}
+.pcard .ds{margin:0 0 16px;color:var(--dim);font-size:.88rem}
+.pcard pre{margin:0;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px;font-family:var(--font-en);font-size:.76rem;line-height:1.7;color:var(--dim);white-space:pre-wrap;word-break:break-word;max-height:200px;overflow-y:auto}
+.pcard .cpy{margin-top:14px;display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:11px 22px;border-radius:999px;border:none;background:var(--accent);color:#fff;font-family:var(--font-kr);font-weight:800;font-size:.88rem;cursor:pointer;transition:opacity .3s var(--ease)}
+.pcard .cpy:hover{opacity:.88}
+.pcard .cpy.ok{background:var(--ink)}
+.pcard.noimg{display:block}
+.pcard .tip{margin:0 0 16px;padding:12px 16px;background:var(--accent-dim);border-radius:10px;font-size:.82rem;color:var(--ink);line-height:1.7}
+.pcard .tip b{color:var(--accent)}
+
+.note{margin-top:24px;font-size:.74rem;color:var(--faint);text-align:center;line-height:1.8}
+
+/* class cta */
+.classbox{margin-top:8px;border:2px solid var(--accent);border-radius:var(--r-lg);background:var(--accent-dim);padding:clamp(28px,6vw,40px) 24px;text-align:center}
+.classbox .big{font-weight:800;font-size:clamp(1.1rem,4vw,1.45rem);line-height:1.55;margin:0 0 10px}
+.classbox .big b{color:var(--accent)}
+.classbox p{margin:0 0 22px;color:var(--dim);font-size:.92rem}
+.classbox .pill{display:inline-flex;align-items:center;gap:7px;padding:13px 24px;min-height:40px;border-radius:999px;font-weight:800;font-size:.9rem;background:var(--accent);color:#fff;transition:opacity .3s var(--ease)}
+.classbox .pill:hover{opacity:.88}
+
+.lightbox{position:fixed;inset:0;background:rgba(10,10,12,.92);display:none;align-items:center;justify-content:center;z-index:200;padding:26px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:8px;cursor:default}
+.lb-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:1.15rem;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
+
+.close{text-align:center;padding-top:clamp(52px,8vw,76px);padding-bottom:56px}
+.close h2{font-weight:800;font-size:clamp(1.35rem,5vw,2rem);line-height:1.42;letter-spacing:-.02em;margin:0 0 12px}
+.close p{color:var(--dim);font-size:.94rem;margin:0 0 28px}
+.close .pill{display:inline-flex;align-items:center;gap:7px;padding:13px 24px;min-height:40px;border-radius:999px;font-weight:800;font-size:.9rem;background:var(--accent);color:#fff;transition:opacity .3s var(--ease)}
+.close .pill:hover{opacity:.88}
+.fine{margin-top:30px;font-size:.72rem;color:var(--faint);line-height:1.9}
+.fine a{text-decoration:underline;text-underline-offset:3px}
+.biz{margin-top:18px;font-size:.68rem;color:var(--faint);line-height:1.9}
+
+.cta-fixed{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--accent);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -2px 14px rgba(0,0,0,.08)}
+.cta-fixed a{display:flex;align-items:center;justify-content:center;height:42px;min-height:40px;color:#fff;font-weight:800;font-size:.92rem;letter-spacing:-.01em}
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="/">니잉<sup>®</sup></a>
+    <nav class="gnav">
+      <a href="/">홈</a>
+      <a href="/lash/">급속교정</a>
+      <a href="/ai/">AI 마케팅</a>
+      <a href="/crew/">래쉬애딕트 도입</a>
+      <a href="/prompts/" aria-current="page">자료공유</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <span class="kicker"><i></i>Free Resources</span>
+  <h1>니잉이 쓰는 AI 프롬프트,<br><em>그대로</em> 가져가세요</h1>
+  <p>복사해서 쓰시는 이미지 생성 AI에 붙여넣으면 됩니다.<br>좋은 프롬프트가 생기면 계속 추가할게요.</p>
+</section>
+
+<div class="how">
+  <div class="cell"><div class="n">STEP 1</div><div class="l">프롬프트 복사</div></div>
+  <div class="cell"><div class="n">STEP 2</div><div class="l">이미지 생성 AI에<br>붙여넣기</div></div>
+  <div class="cell"><div class="n">STEP 3</div><div class="l">원하는 부분만<br>바꿔서 활용</div></div>
+</div>
+
+<section class="wrap" style="padding-top:16px">
+  <div class="pcard">
+    <div class="ph"><img class="zm" src="../assets/img/prompt1.jpg" data-full="../assets/img/prompt1.jpg" alt="프롬프트 1로 생성한 예시 — 실내 자연광 셀피" loading="lazy"><span class="zoom">눌러서 크게 보기</span></div>
+    <div class="bd">
+      <div class="no">Prompt 01</div>
+      <h3>실내 자연광 셀피</h3>
+      <p class="ds">턱을 괴고 정면을 보는 실내 컷. 자연광의 부드러운 데일리 무드예요.</p>
+      <pre id="pt1">Close-up selfie of a young Korean woman indoors, shot at eye level, head tilted to one side and resting on the back of her hand, gazing directly at the camera with a calm, neutral expression. Long straight dark brown hair with wispy see-through bangs and thin face-framing strands, hair tucked behind one ear revealing small silver stud earrings. Pale, smooth glowing skin with soft pink blush, small straight nose, natural straight brows. Dark brown eyes with soft natural eye makeup. Full glossy lips in a pink tint. Wearing a light peach-pink thin-strap camisole top, bare shoulders and collarbone visible. Background: bright beige room with built-in wardrobe doors and a white door, slightly blurred. Soft diffused indoor daylight, warm tones, candid smartphone photo aesthetic, shallow depth of field, Korean natural makeup style, high resolution, realistic.</pre>
+      <button class="cpy" data-target="pt1">프롬프트 복사</button>
+    </div>
+  </div>
+
+  <div class="pcard">
+    <div class="ph"><img class="zm" src="../assets/img/prompt2.jpg" data-full="../assets/img/prompt2.jpg" alt="프롬프트 2로 생성한 예시 — 침대 위 하이앵글 셀피" loading="lazy"><span class="zoom">눌러서 크게 보기</span></div>
+    <div class="bd">
+      <div class="no">Prompt 02</div>
+      <h3>침대 위 하이앵글 셀피</h3>
+      <p class="ds">침대에 누워 위에서 내려다보는 앵글. 글로시 립과 렌즈 표현이 포인트예요.</p>
+      <pre id="pt2">Close-up selfie of a young East Asian woman lying on a white bed, shot from above at a slight diagonal angle, head tilted with face turned toward the camera. Long wavy brown hair spread loosely across the white bedsheet, wispy see-through bangs, a few strands falling across her face. Pale, glass-like dewy skin with soft pink blush concentrated on the cheeks and nose tip. Grey-blue colored contact lenses, large eyes with subtle aegyo-sal, natural brown eyeshadow, thin eyeliner, delicate lashes. Full glossy lips in a coral-pink tint with high-shine gloss. Wearing a dark navy knit cardigan with white lace scalloped trim on the collar and neckline. Soft, even indoor lighting, white bedding as background, slightly muted cool tones, smartphone photo aesthetic, shallow depth of field, Korean/Douyin makeup style, high resolution, realistic.</pre>
+      <button class="cpy" data-target="pt2">프롬프트 복사</button>
+    </div>
+  </div>
+
+  <div class="pcard">
+    <div class="ph"><img class="zm" src="../assets/img/prompt3.jpg" data-full="../assets/img/prompt3.jpg" alt="프롬프트 3로 생성한 예시 — 야외 거리 셀피" loading="lazy"><span class="zoom">눌러서 크게 보기</span></div>
+    <div class="bd">
+      <div class="no">Prompt 03</div>
+      <h3>야외 거리 셀피</h3>
+      <p class="ds">한낮의 거리에서 살짝 위에서 찍은 데일리 컷. 야외 자연광 톤이에요.</p>
+      <pre id="pt3">Close-up selfie of a young Korean woman outdoors on a city street in daylight, shot from a slightly high angle, face and upper body filling the frame, eyes glancing slightly to the side with a calm, neutral expression. Long dark brown hair with a middle part, soft waves falling over the shoulders, a few strands across the collarbone. Pale, smooth skin with warm peachy blush on the cheeks, straight natural brows, small nose, a tiny mole on the cheek. Dark brown eyes with soft natural eye makeup. Full lips in a muted rose-pink matte tint. Wearing a white off-shoulder eyelet lace blouse with scalloped trim and a small ribbon tie at the center, thin silver chain bag strap over one shoulder. Background: blurred street with a stone ledge, trees, a brick building, and a person sitting on a bench in the distance. Soft natural daylight, slightly overexposed highlights, warm tones, candid smartphone photo aesthetic, shallow depth of field, Korean natural makeup style, high resolution, realistic.</pre>
+      <button class="cpy" data-target="pt3">프롬프트 복사</button>
+    </div>
+  </div>
+
+  <div class="pcard">
+    <div class="ph"><img class="zm" src="../assets/img/prompt4.jpg" data-full="../assets/img/prompt4.jpg" alt="프롬프트 4로 생성한 예시 — 제품을 든 데일리 컷" loading="lazy"><span class="zoom">눌러서 크게 보기</span></div>
+    <div class="bd">
+      <div class="no">Prompt 04</div>
+      <h3>내 제품 합성 데일리 컷 — 브라운 톤</h3>
+      <p class="ds">손에 커피컵·열쇠·이어폰과 함께 내 제품을 자연스럽게 들고 있는 연출 컷을 만듭니다. 핀터레스트 감성의 세로 3:4 구도예요.</p>
+      <p class="tip"><b>사용법</b> — 이 프롬프트는 <b>제품 사진을 함께 첨부</b>해야 합니다. 이미지 생성 AI에 내 제품 사진을 올리고 "Sample Image"라고 알려준 뒤, 프롬프트를 붙여넣으세요. 제품은 원본 그대로 유지되고 주변 소품만 생성됩니다.</p>
+      <pre id="pt4">COMPOSITE-READY MASTER PROMPT — CHESTNUT-BROWN COLOR VERSION
+
+REFERENCE IMAGE INSTRUCTIONS
+Attach the sample image to this generation request and label it "Sample Image / Source Asset." Use the Sample Image as the sole source of truth for the featured product or object that must appear in the final image. Extract and preserve its recognizable silhouette, dimensions and proportions, material, surface finish, original colors, packaging structure, cap or lid shape, label layout, and distinctive non-text design features. Do not replace it with a generic lookalike, invent a different product, change its product category, recolor it, or redesign any part of it.
+
+Naturally composite the featured product/object from the Sample Image into the scene described below. It must be physically held by the hand, correctly occluded by fingers where they overlap, and matched to the scene's camera angle, scale, perspective, soft lighting, color grading, contact shadows, depth of field, and fine film grain. It must look photographed in the scene, never pasted on top. Preserve the source product's visible branding and label design only when shown clearly in the Sample Image. Avoid invented or garbled microtext; if tiny text cannot be reproduced faithfully, retain the source label's color blocks, spacing, and hierarchy while making microtext naturally soft and unreadable.
+
+COLOR-CHANGE PRIORITY: replace every newly generated green, olive, sage, moss, mint, or faded-green design element in the surrounding target scene with a restrained chestnut-brown / cocoa-brown equivalent. No green hue may remain in the coffee cup, nails, envelope, or generated color palette. The Sample Image product is the sole exception: preserve it exactly as supplied, including every original color, green area if present, packaging detail, logo placement, and label layout. Do not recolor, retouch, restyle, or color-grade the Sample Image product. Do not recolor white earphones, black leather, metallic keys, or the warm-gray background.
+
+The featured product/object from the Sample Image is the cosmetic hand-cream tube in this composition. Place it vertically near the center-left of the hand, immediately beside the coffee cup, gently tilted, with its black cap at the top if the source product has a black cap. If the Sample Image product has a different shape, cap, or color, retain those source characteristics exactly, with no recoloring. Preserve its placement, scale, hand-held integration, and full recognizability; do not hide it behind the other accessories.
+
+Create a highly realistic vertical 3:4 editorial lifestyle photograph, shot as an intimate, spontaneous fashion still-life snapshot.
+
+Scene and composition: a close-up of only one hand and forearm entering diagonally from the lower-left side of the frame; no face and no body are visible. The wrist is covered by the gathered cuff of an oversized black leather jacket with soft wrinkles, a subtle satin sheen, and realistic worn-leather texture. The hand is in the center-right of the frame, casually but securely carrying several everyday objects in one hand. The overall composition feels slightly messy, personal, stylish, and effortlessly curated rather than commercially staged.
+
+Hand details: a feminine hand with natural realistic proportions; relaxed fingers are partially curled around the objects. Use a soft pale-neutral skin tone. Fingernails are medium length and rounded almond-shaped, painted a uniform glossy chestnut-brown, deep cocoa-brown, or muted dark-caramel brown. All nails use the same solid single-color polish with no nail art, flowers, accents, patterns, contrasting color, or green undertone. Maintain correct anatomy: five fingers only, realistic knuckles and thumb position, and believable pressure and occlusion where the hand grips each item.
+
+Main object: a large chestnut-brown disposable takeaway coffee cup, upright in the upper-right center of the frame. The cup is matte paper in a muted cocoa / warm chestnut-brown finish, with a slightly lighter cream-colored cardboard sleeve around the middle. It has a thick matte-white plastic sip lid, viewed from slightly above so its elliptical rim and recessed drinking opening are visible. Add only small, minimal, partially obscured dark-brown or black sans-serif café-style lettering; it must be indistinct and unreadable. The cup looks full-sized, about 12-16 oz, and is the largest supporting object.
+
+Across the front center of the coffee cup, tuck a small unbranded brown kraft-paper letter envelope beneath the fingers. The envelope is rectangular, warm medium kraft brown, lightly creased, and has a clear triangular folded flap seam. It is held horizontally with a gentle natural bend, partially overlapping the cream cup sleeve without covering the whole cup. Use blank matte kraft paper: no address, stamp, handwriting, logo, printed text, currency pattern, or graphic design. It should add a warm casual stationery detail while remaining physically believable in the hand.
+
+Featured Sample Image product: use the exact product/object from the Sample Image in place of the usual cosmetic tube. Hold it vertically near the center-left of the carried objects, immediately to the left of the coffee cup and gently tilted. Preserve its original shape, packaging, material, cap/lid, colors, and design identity exactly as supplied. Do not recolor, restyle, redesign, simplify, or replace any visible part of this source product. Integrate it naturally into the hand-held arrangement only by matching the scene around it. Do not include a notebook, planner, book, or any rectangular paper item.
+
+Foreground accessories: a tangled white wired earphone cord drapes across the fingers and lower center of the frame. The cord is realistically thin, loosely knotted, and has small white earbuds and an inline microphone/control piece. The cable continues downward and exits the bottom edge of the image. Beneath the hand, add a metallic key ring with several dangling keys: two aged brass keys, one small silver key, a dark key fob, and a few tiny metal rings. The keys hang naturally below the hand, partly overlapping the white earphone cable, with realistic gravity and small reflective highlights.
+
+Background: a completely plain, softly lit indoor wall with a pale warm-gray background. The left side has an extremely subtle dusty-rose or muted warm-beige cast, blending softly into warm gray on the right. No furniture, room details, horizon line, or decorations. Leave generous clean negative space in the upper half and on the right side.
+
+Lighting and photographic style: soft diffuse daylight, as though photographed near a large window on an overcast day. Use very soft, almost invisible shadows and gentle low-contrast tonal transitions. Match the surrounding scene's illumination and shadow direction to the Sample Image product without changing the source product's original colors or design. Use a desaturated muted palette of chestnut brown, cocoa brown, dark caramel brown, cream white, charcoal black, taupe gray, warm kraft-paper brown, aged brass, and warm pale gray for all newly generated scene elements; retain the Sample Image product's original palette exactly. Apply a slightly cool-white balance with a faint dusty-rose cast in the background. The image has a natural smartphone/editorial film-scan aesthetic with subtle fine grain, gentle softness, realistic texture, modest dynamic range, no artificial HDR, no hard flash, and no dramatic studio lighting.
+
+Camera and framing: vertical portrait framing, 3:4 aspect ratio, approximately 736 x 981 pixels. Tight crop, photographed from slightly above and in front of the objects, similar to a 50 mm smartphone-equivalent lens. Use moderate depth of field: the hand, chestnut-brown coffee cup, Sample Image product, tangled cable, and keys are mostly in focus while the plain wall is smooth and softly blurred. The image should look like an authentic Pinterest-style minimalist fashion and daily-carry photograph, not a product advertisement.
+
+IMPORTANT CONSTRAINTS
+- The Sample Image product/object must be visibly present and naturally composited into the stated tube position; it is the priority subject.
+- Preserve the Sample Image product/object exactly as supplied: its recognizable form, materials, packaging, cap/lid, original colors, labels, and design details. Never recolor or redesign the Sample Image product, even if it contains green.
+- The coffee cup, nails, kraft-paper envelope, and all newly generated scene elements must be brown-based; do not add green, olive, sage, moss, mint, or teal to any newly generated element.
+- Preserve natural physical interaction: fingers grip the product, accessories overlap it plausibly, and all contact shadows, perspective, and scale are coherent.
+- No banknote, cash, currency, money, notebook, planner, book, paper pad, face, visible eyes, extra arms, extra hands, extra fingers, distorted anatomy, duplicate products, text overlay, captions, watermark, invented logos, writing or addresses on the envelope, unrealistic floating accessories, plastic-looking skin, cluttered room, or coffee spill.
+
+NEGATIVE PROMPT
+new green objects, sage-green coffee cup, olive-green coffee cup, moss-green coffee cup, mint-green coffee cup, green nail polish, green envelope, green banknote, green color cast on the generated scene, banknote, cash, money, currency, dollar bill, currency pattern, denomination, serial number, coin, printed envelope, addressed envelope, postage stamp, envelope logo, handwritten envelope, product replacement, generic substitute product, redesigned source packaging, recolored source product, altered source logo, altered source label layout, incorrect product color, changed cap shape, duplicated product, missing featured product, product pasted on top, sticker-like cutout, wrong scale, wrong perspective, mismatched light, mismatched shadows, hard-edged composite, halo around the product, floating product, hand covering the entire product, notebook, planner, book, paper pad, rectangular paper item, nail art, flower nail art, nail stickers, patterned nails, multicolored nails, contrasting nails, distorted hand, extra hand, extra arm, extra finger, malformed fingers, face, person, full body, visible eyes, illegible oversized typography, text overlay, watermark, caption, overly crisp invented label text, cluttered background, furniture, hard flash, harsh shadow, high contrast, dramatic studio light, glossy product advertisement, CGI, 3D render, illustration, cartoon, heavy HDR, oversharpening, coffee spill</pre>
+      <button class="cpy" data-target="pt4">프롬프트 복사</button>
+    </div>
+  </div>
+
+  <p class="note">예시 이미지는 모두 AI로 생성한 가상 인물입니다. 프롬프트는 자유롭게 사용하시면 됩니다.</p>
+</section>
+
+<section class="wrap">
+  <div class="classbox">
+    <p class="big">프롬프트를 붙여넣는 것과<br><b>내 고객 사진에 쓰는 것</b>은 다릅니다</p>
+    <p>내 작업물은 그대로 두고 얼굴만 바꾸는 방법은 AI 마케팅 클래스에서 배워요.<br>수업이 끝나면 게시 가능한 콘텐츠를 최소 5개 완성해서 가져갑니다.</p>
+    <a class="pill" href="/ai/">AI 마케팅 클래스 보기</a>
+  </div>
+</section>
+
+<section class="close wrap">
+  <h2>쓰다가 막히면<br><em>물어보셔도</em> 됩니다</h2>
+  <p>프롬프트 관련 질문은 부담 없이 카카오톡으로 남겨주세요.</p>
+  <a class="pill" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">카카오톡으로 문의하기</a>
+  <div class="fine">자료공유 · 니잉<br><a href="https://www.instagram.com/neeink.woody/" target="_blank" rel="noopener">인스타그램 @neeink.woody</a></div>
+</section>
+
+<div class="cta-fixed">
+  <a href="/ai/">AI 마케팅 클래스 보기</a>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="닫기">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.zm').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = this.dataset.full;
+      lbImg.alt = this.alt;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', function(){ lb.classList.remove('open'); });
+  lbImg.addEventListener('click', function(e){ e.stopPropagation(); });
+  document.getElementById('lbClose').addEventListener('click', function(e){ e.stopPropagation(); lb.classList.remove('open'); });
+
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e) {}
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll('.cpy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = document.getElementById(this.dataset.target).textContent;
+      var done = function(b){
+        b.textContent = '복사됐어요 ✓'; b.classList.add('ok');
+        setTimeout(function(){ b.textContent = '프롬프트 복사'; b.classList.remove('ok'); }, 1800);
+      };
+      var b = this;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function(){ done(b); }, function(){ fallbackCopy(text); done(b); });
+      } else { fallbackCopy(text); done(b); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

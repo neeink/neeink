@@ -3,286 +3,265 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>니잉 클래스 | 속눈썹펌 · AI 마케팅 교육</title>
-<meta name="description" content="신논현 니잉의 원장 대상 교육. 속눈썹펌 급속교정 클래스와 AI 마케팅 클래스 중 나에게 맞는 쪽을 고르세요.">
-<meta name="theme-color" content="#0b0b0a">
+<title>니잉 | 속눈썹펌 교육 · AI 마케팅 · 마스터크루</title>
+<meta name="description" content="속눈썹펌 급속교정과 AI 마케팅 교육, 래쉬애딕트 제품과 마스터크루. 원장님의 실력과 매출을 같이 만듭니다.">
+<meta name="theme-color" content="#ffffff">
 <link rel="preload" href="assets/fonts/Freesentation-4Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" href="assets/fonts/Freesentation-8ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="icon" href="assets/img/hero.webp">
 <meta property="og:type" content="website">
-<meta property="og:title" content="니잉 클래스 | 속눈썹펌 · AI 마케팅 교육">
-<meta property="og:description" content="신논현 니잉의 원장 대상 교육. 속눈썹펌 급속교정 클래스와 AI 마케팅 클래스 중 나에게 맞는 쪽을 고르세요.">
+<meta property="og:title" content="니잉 | 속눈썹펌 교육 · AI 마케팅 · 마스터크루">
+<meta property="og:description" content="속눈썹펌 급속교정과 AI 마케팅 교육, 래쉬애딕트 제품과 마스터크루. 원장님의 실력과 매출을 같이 만듭니다.">
 <meta property="og:image" content="https://neeink.vercel.app/assets/img/hero.webp">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+</head>
+<body>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @font-face{font-family:'Freesentation';src:url(assets/fonts/Freesentation-4Regular.ttf) format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:'Freesentation';src:url(assets/fonts/Freesentation-8ExtraBold.ttf) format('truetype');font-weight:800;font-display:swap}
 
 :root{
-  --ground:#0b0b0a;
-  --elev:#141311;
-  --elev-2:#1b1a17;
-  --text:#f0ede6;
-  --dim:rgba(240,237,230,.64);
-  --faint:rgba(240,237,230,.42);
-  --line:rgba(240,237,230,.14);
-  --line-strong:rgba(240,237,230,.26);
-  --cat-skill:#e0a9ae;
-  --cat-mkt:#a8bdd4;
+  --bg:#ffffff;--bg-soft:#f6f6f8;--bg-soft-2:#eef0f3;
+  --ink:#111111;--dim:#55565d;--faint:#93949c;
+  --line:#e6e7eb;--line-strong:#d3d5db;
+  --accent:#0057ff;--accent-dim:#eaf0ff;
   --ease:cubic-bezier(.19,1,.22,1);
-  --nav-h:62px;
+  --nav-h:60px;--cta-h:58px;
   --font-kr:'Freesentation',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
   --font-en:'Space Grotesk','Freesentation',sans-serif;
+  --r-card:14px;--r-lg:18px;--r-pill:999px;--r-img:12px;
 }
-
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;
-  background:var(--ground);
-  color:var(--text);
-  font-family:var(--font-kr);
-  font-weight:400;
-  line-height:1.7;
-  -webkit-font-smoothing:antialiased;
-  padding-bottom:var(--nav-h);
-}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-kr);font-weight:400;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all;padding-bottom:calc(var(--cta-h) + 22px + env(safe-area-inset-bottom))}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}
 a{color:inherit;text-decoration:none}
-a:focus-visible,button:focus-visible{outline:2px solid var(--text);outline-offset:3px}
-em{padding-right:.14em}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+em{font-style:italic;font-weight:800;color:var(--accent);padding-right:.1em}
+img{max-width:100%;display:block}
+.wrap{max-width:760px;margin:0 auto;padding-left:22px;padding-right:22px}
+.wide{max-width:960px;margin:0 auto;padding-left:22px;padding-right:22px}
 
-.wrap{max-width:960px;margin:0 auto;padding-left:22px;padding-right:22px}
-
-/* ── header ── */
-header.top{
-  position:sticky;top:0;z-index:40;
-  background:rgba(11,11,10,.86);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
-}
-.top-in{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:14px 22px}
-.mark{font-weight:800;font-size:1.12rem;letter-spacing:-.02em}
+/* ── nav ── */
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:12px 22px;gap:10px}
+.mark{font-weight:800;font-size:1.08rem;letter-spacing:-.02em;flex-shrink:0}
 .mark sup{font-family:var(--font-en);font-size:.5em;font-weight:500;color:var(--faint);vertical-align:super;margin-left:2px}
-.top-in .loc{font-family:var(--font-en);font-size:.72rem;letter-spacing:.1em;color:var(--faint);text-transform:uppercase}
+nav.gnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.gnav::-webkit-scrollbar{display:none}
+nav.gnav a{font-size:.78rem;font-weight:700;color:var(--dim);padding:9px 11px;border-radius:999px;min-height:40px;display:flex;align-items:center;white-space:nowrap;transition:color .2s var(--ease),background .2s var(--ease)}
+nav.gnav a:hover{color:var(--ink)}
+nav.gnav a[aria-current="page"]{color:var(--accent);background:var(--accent-dim)}
 
 /* ── hero ── */
-.hero{padding-top:84px;padding-bottom:64px;text-align:center}
-.hero .kicker{
-  font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--faint);margin-bottom:26px;
-}
-.hero h1{
-  font-weight:800;font-size:clamp(1.6rem,6.9vw,3rem);line-height:1.36;
-  letter-spacing:-.03em;margin:0 0 22px;word-break:keep-all;
-}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--text)}
-.hero p{color:var(--dim);font-size:clamp(.95rem,2.7vw,1.06rem);max-width:26em;margin:0 auto 34px;line-height:1.75}
+.hero{padding-top:60px;padding-bottom:52px;text-align:center}
+.hero .kicker{font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:22px}
+.hero h1{font-weight:800;font-size:clamp(1.5rem,6.4vw,2.5rem);line-height:1.4;letter-spacing:-.03em;margin:0 0 18px}
+.hero p{color:var(--dim);font-size:clamp(.95rem,2.7vw,1.05rem);max-width:28em;margin:0 auto 30px;line-height:1.75}
 .pills{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
-.pill{
-  display:inline-flex;align-items:center;gap:7px;
-  padding:13px 24px;border-radius:999px;font-weight:800;font-size:.9rem;
-  border:1px solid var(--line-strong);transition:all .3s var(--ease);
-}
-.pill.solid{background:var(--text);color:var(--ground);border-color:var(--text)}
-.pill.solid:hover{opacity:.86}
-.pill.line:hover{border-color:var(--text);background:var(--elev)}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:13px 24px;min-height:40px;border-radius:999px;font-weight:800;font-size:.9rem;border:1px solid var(--line-strong);transition:all .3s var(--ease)}
+.pill.solid{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pill.solid:hover{opacity:.88}
+.pill.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pill.dark:hover{opacity:.86}
+.pill.line{color:var(--ink)}
+.pill.line:hover{border-color:var(--ink);background:var(--bg-soft)}
 
-/* ── proof ticker ── */
-.proof{
-  display:flex;gap:0;justify-content:center;flex-wrap:wrap;
-  margin-top:40px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-}
-.proof .cell{flex:1 1 50%;padding:22px 18px;text-align:center;
-  border-right:1px solid var(--line);
-}
+/* ── proof ── */
+.shot{width:100%;max-height:400px;object-fit:cover;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof{display:flex;flex-wrap:wrap;justify-content:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof .cell{flex:1 1 33.33%;padding:22px 12px;text-align:center;border-right:1px solid var(--line)}
 .proof .cell:last-child{border-right:none}
-.proof .n{font-family:var(--font-en);font-weight:700;font-size:1.7rem;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.proof .l{font-size:.72rem;color:var(--faint);margin-top:6px;letter-spacing:.01em}
+.proof .n{font-family:var(--font-en);font-weight:700;font-size:1.6rem;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;color:var(--ink)}
+.proof .l{font-size:.72rem;color:var(--faint);margin-top:6px}
 
 /* ── section frame ── */
 section{padding-top:clamp(68px,10vw,100px);padding-bottom:clamp(44px,6vw,60px)}
-.eyebrow{
-  font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--faint);display:block;margin-bottom:24px;
-}
-h2.st{font-weight:800;font-size:clamp(1.45rem,5vw,2.1rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 20px;word-break:keep-all}
+.eyebrow{font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:22px}
+h2.st{font-weight:800;font-size:clamp(1.4rem,5vw,2rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 18px}
 p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 
-/* ── choice cards ── */
-.choice{display:grid;grid-template-columns:1fr;gap:16px;margin-top:44px}
-@media(min-width:800px){.choice{grid-template-columns:1fr 1fr}}
-.ch{
-  background:var(--elev);border:1px solid var(--line);border-radius:14px;
-  padding:30px 24px 26px;display:flex;flex-direction:column;
-  transition:border-color .35s var(--ease),background .35s var(--ease);
-  position:relative;overflow:hidden;
-}
-.ch::before{content:'';position:absolute;inset:0 0 auto;height:2px;background:var(--c);opacity:.55}
-.ch:hover{border-color:var(--line-strong);background:var(--elev-2)}
-.ch .badge{
-  display:inline-flex;align-items:center;gap:7px;align-self:flex-start;
-  font-family:var(--font-en);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--dim);margin-bottom:18px;
-}
-.ch .badge i{width:7px;height:7px;border-radius:50%;background:var(--c);display:block}
-.ch h3{font-weight:800;font-size:clamp(1.3rem,4.6vw,1.62rem);line-height:1.36;letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
-.ch .who{
-  font-size:.9rem;color:var(--text);line-height:1.6;
-  padding:14px 16px;background:rgba(240,237,230,.045);border-radius:9px;margin-bottom:20px;
-}
-.ch .who span{display:block;font-family:var(--font-en);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
-.ch dl{margin:0 0 24px;display:flex;flex-direction:column;gap:0}
-.ch .row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:11px 0;border-top:1px dotted var(--line-strong);font-size:.86rem}
-.ch .row:first-child{border-top:none;padding-top:0}
-.ch .row dt{color:var(--faint);flex-shrink:0}
-.ch .row dd{margin:0;text-align:right;color:var(--text)}
-.ch .row dd b{font-family:var(--font-en);font-weight:700;font-size:1.02rem;font-variant-numeric:tabular-nums}
-.ch .go{
-  margin-top:auto;display:flex;align-items:center;justify-content:space-between;
-  padding:14px 20px;border-radius:999px;background:var(--text);color:var(--ground);
-  font-weight:800;font-size:.9rem;transition:opacity .3s var(--ease);
-}
+/* ── choice cards (교육) ── */
+.choice{display:grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
+@media(min-width:700px){.choice{grid-template-columns:1fr 1fr}}
+.ch{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--r-card);padding:26px 22px 22px;display:flex;flex-direction:column;transition:border-color .3s var(--ease),background .3s var(--ease)}
+.ch:hover{border-color:var(--line-strong);background:var(--bg-soft-2)}
+.ch .badge{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;font-family:var(--font-en);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:14px}
+.ch .badge i{width:6px;height:6px;border-radius:50%;background:var(--ink);display:block}
+.ch h3{font-weight:800;font-size:1.2rem;line-height:1.4;letter-spacing:-.02em;margin:0 0 10px}
+.ch p{margin:0 0 20px;color:var(--dim);font-size:.9rem;line-height:1.65}
+.ch .go{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding:13px 18px;min-height:40px;border-radius:999px;background:var(--ink);color:#fff;font-weight:800;font-size:.86rem;transition:opacity .3s var(--ease)}
 .ch .go:hover{opacity:.86}
 .ch .go .ar{font-family:var(--font-en);transition:transform .35s var(--ease)}
 .ch:hover .go .ar{transform:translateX(5px)}
 
-/* ── how ── */
-.how{display:flex;flex-direction:column;margin-top:44px}
-.hw{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:30px 0;border-top:1px solid var(--line)}
-.hw:last-child{border-bottom:1px solid var(--line)}
-.hw .n{font-family:var(--font-en);font-weight:500;font-size:.76rem;color:var(--faint);letter-spacing:.06em;padding-top:5px;font-variant-numeric:tabular-nums}
-.hw h4{margin:0 0 6px;font-size:1.06rem;font-weight:800;letter-spacing:-.01em}
-.hw p{margin:0;color:var(--dim);font-size:.9rem;max-width:32em}
+/* ── crew band ── */
+.crew{display:grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
+@media(min-width:700px){.crew{grid-template-columns:1fr 1fr}}
+.cw{border:1px solid var(--line);border-radius:var(--r-card);padding:24px 22px;background:var(--bg)}
+.cw .tag{font-family:var(--font-en);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
+.cw h4{margin:0 0 8px;font-size:1.04rem;font-weight:800;letter-spacing:-.01em}
+.cw p{margin:0 0 16px;color:var(--dim);font-size:.88rem;line-height:1.7}
+.cw a.more{font-size:.84rem;font-weight:800;color:var(--accent);display:inline-flex;align-items:center;gap:5px;min-height:40px;align-items:center}
 
-/* ── closing ── */
-.close{text-align:center;padding-top:clamp(68px,10vw,100px);padding-bottom:80px}
-.close h2{font-weight:800;font-size:clamp(1.5rem,5.4vw,2.15rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
-.close h2 em{font-style:italic;font-weight:400}
-.close p{color:var(--dim);font-size:.94rem;margin:0 0 30px}
-.fine{margin-top:32px;font-size:.7rem;color:var(--faint);line-height:1.9}
+/* ── reviews (lightbox pattern, shared) ── */
+.revgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:32px}
+@media(min-width:560px){.revgrid{grid-template-columns:repeat(4,1fr)}}
+.revgrid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r-img);border:1px solid var(--line);cursor:zoom-in}
+.revgrid .extra{display:none}
+.revgrid.show-all .extra{display:block}
+.rv-more{display:block;margin:16px auto 0;padding:10px 20px;min-height:40px;border-radius:999px;border:1px solid var(--line-strong);background:var(--bg);color:var(--ink);font-weight:700;font-size:.85rem}
+.rv-more:hover{border-color:var(--ink)}
+.lightbox{position:fixed;inset:0;background:rgba(10,10,12,.92);display:none;align-items:center;justify-content:center;z-index:200;padding:26px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:8px;cursor:default}
+.lb-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:1.15rem;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
 
-/* ── bottom nav ── */
-nav.tab{
-  position:fixed;left:0;right:0;bottom:0;z-index:50;
-  height:var(--nav-h);display:grid;grid-template-columns:repeat(4,1fr);
-  background:rgba(11,11,10,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-  border-top:1px solid var(--line);
-  padding-bottom:env(safe-area-inset-bottom);
-}
-nav.tab a{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
-  font-size:.64rem;letter-spacing:.01em;color:var(--faint);transition:color .25s var(--ease);
-}
-nav.tab a svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-nav.tab a:hover{color:var(--dim)}
-nav.tab a[aria-current="page"]{color:var(--text);font-weight:800}
+/* ── closing / intro ── */
+.close{text-align:center;padding-top:clamp(68px,10vw,100px);padding-bottom:56px}
+.close p.lead{color:var(--dim);font-size:.98rem;line-height:1.85;max-width:32em;margin:0 auto 28px}
+.fine{margin-top:30px;font-size:.72rem;color:var(--faint);line-height:1.9}
+.fine a{text-decoration:underline;text-underline-offset:3px}
+.biz{margin-top:18px;font-size:.68rem;color:var(--faint);line-height:1.9}
+
+/* ── fixed bottom cta ── */
+.cta-fixed{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--accent);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -2px 14px rgba(0,0,0,.08)}
+.cta-fixed a{display:flex;align-items:center;justify-content:center;height:42px;min-height:40px;color:#fff;font-weight:800;font-size:.92rem;letter-spacing:-.01em}
 </style>
-</head>
-<body>
 
 <header class="top">
   <div class="top-in">
-    <span class="mark">니잉<sup>®</sup></span>
-    <span class="loc">Sinnonhyeon · Seoul</span>
+    <a class="mark" href="/">니잉<sup>®</sup></a>
+    <nav class="gnav">
+      <a href="/" aria-current="page">홈</a>
+      <a href="/lash/">급속교정</a>
+      <a href="/ai/">AI 마케팅</a>
+      <a href="/crew/">래쉬애딕트 도입</a>
+      <a href="/prompts/">자료공유</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero wrap">
-  <div class="kicker">Lash Perm · AI Marketing</div>
-  <h1>실력을 <em>키울</em> 것인가<br>그 실력을 <em>보여줄</em> 것인가</h1>
-  <p>니잉의 교육은 두 가지입니다. 지금 원장님께 필요한 쪽을 고르세요.</p>
+  <div class="kicker">Lash Perm · AI Marketing · Master Crew</div>
+  <h1>원장님의 <em>실력</em>과 <em>매출</em>,<br>니잉이 같이 만듭니다</h1>
+  <p>속눈썹펌 급속교정과 AI 마케팅 교육, 그리고 제품·크루까지. 지금 필요한 쪽을 골라보세요.</p>
   <div class="pills">
-    <a class="pill solid" href="#choose">교육 비교하기</a>
-    <a class="pill line" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">카카오톡 문의</a>
+    <a class="pill solid" href="#edu">교육 보기</a>
+    <a class="pill line" href="#product">제품 보기</a>
   </div>
 </section>
 
+<img class="shot" src="assets/img/hero.webp" alt="니잉 속눈썹펌 시술 결과">
+
+<section class="wrap" id="edu">
+  <span class="eyebrow">Education</span>
+  <h2 class="st">교육, 두 가지입니다</h2>
+  <p class="ss">하나는 손끝을, 하나는 노출을 다룹니다. 목적에 맞는 쪽으로 들어가세요.</p>
+  <div class="choice">
+    <a class="ch" href="/lash/">
+      <span class="badge"><i></i>Skill</span>
+      <h3>급속교정 클래스</h3>
+      <p>시술마다 흔들리는 손끝을, 어떤 눈매가 와도 흔들리지 않는 판단 기준으로 바꿉니다.</p>
+      <span class="go">자세히 보기 <span class="ar">→</span></span>
+    </a>
+    <a class="ch" href="/ai/">
+      <span class="badge"><i></i>Marketing</span>
+      <h3>AI 마케팅 클래스</h3>
+      <p>고객 얼굴을 가리지 않고도, 실력이 그대로 보이는 게시 가능한 콘텐츠를 만듭니다.</p>
+      <span class="go">자세히 보기 <span class="ar">→</span></span>
+    </a>
+  </div>
+</section>
+
+<section class="wrap" id="product">
+  <span class="eyebrow">Product &amp; Crew</span>
+  <h2 class="st">제품과 크루</h2>
+  <p class="ss">배우고 끝이 아니라, 이어갈 곳이 있습니다.</p>
+  <div class="crew">
+    <div class="cw">
+      <div class="tag">Product</div>
+      <h4>래쉬애딕트마스터</h4>
+      <p>속눈썹 · 눈썹 · 모발 세럼 3종. 제품 도입부터 판매 교육까지 함께합니다.</p>
+      <a class="more" href="/crew/">제품 보기 →</a>
+    </div>
+    <div class="cw">
+      <div class="tag">Master Crew</div>
+      <h4>니잉 마스터크루</h4>
+      <p>200여 명의 원장님이 함께하는 크루입니다. 단톡방으로 바로 질문하고, 맞춤 특강까지 받아보세요.</p>
+      <a class="more" href="/crew/">크루 보기 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:0">
+  <span class="eyebrow">Track record</span>
+  <h2 class="st">숫자로 보는 니잉</h2>
+</section>
 <div class="proof">
   <div class="cell"><div class="n">6,000+</div><div class="l">누적 시술</div></div>
   <div class="cell"><div class="n">500+</div><div class="l">교육으로 만난 원장님</div></div>
+  <div class="cell"><div class="n">200+</div><div class="l">마스터크루 원장님</div></div>
 </div>
 
-<section class="wrap" id="choose">
-  <span class="eyebrow">Choose</span>
-  <h2 class="st">지금 어느 쪽이 고민인가요</h2>
-  <p class="ss">두 교육은 목적이 다릅니다. 하나는 손끝을, 하나는 노출을 다룹니다.</p>
-
-  <div class="choice">
-    <a class="ch" style="--c:var(--cat-skill)" href="lash/">
-      <span class="badge"><i></i>Skill</span>
-      <h3>시술마다 흔들리는<br>손끝을 잡습니다</h3>
-      <div class="who"><span>For</span>이미 속눈썹펌을 하고 있지만, 시술할 때마다 확신이 서지 않는 원장님</div>
-      <dl>
-        <div class="row"><dt>클래스</dt><dd>급속교정 클래스</dd></div>
-        <div class="row"><dt>방식</dt><dd>온라인 이론 → 오프라인 실습</dd></div>
-        <div class="row"><dt>커리큘럼</dt><dd><b>11</b>단계</dd></div>
-        <div class="row"><dt>수강료</dt><dd><b>99</b>만원부터</dd></div>
-      </dl>
-      <span class="go">자세히 보기 <span class="ar">→</span></span>
-    </a>
-
-    <a class="ch" style="--c:var(--cat-mkt)" href="ai/">
-      <span class="badge"><i></i>Marketing</span>
-      <h3>좋은 시술일수록<br>잘 보여줘야 합니다</h3>
-      <div class="who"><span>For</span>고객이 얼굴 공개를 꺼려서, 가린 사진만 올리다 실력까지 가려지는 뷰티업 원장님</div>
-      <dl>
-        <div class="row"><dt>클래스</dt><dd>AI 마케팅 클래스</dd></div>
-        <div class="row"><dt>방식</dt><dd>오프라인 · 온라인 준비 중</dd></div>
-        <div class="row"><dt>수업 시간</dt><dd><b>3~5</b>시간 · 1회</dd></div>
-        <div class="row"><dt>수강료</dt><dd><b>50</b>만원부터</dd></div>
-      </dl>
-      <span class="go">자세히 보기 <span class="ar">→</span></span>
-    </a>
-  </div>
+<section class="wrap" style="padding-bottom:0">
+  <span class="eyebrow">Reviews</span>
+  <h2 class="st">먼저 다녀가신<br>원장님들의 후기</h2>
+  <p class="ss">과장 없이, 직접 남겨주신 후기 그대로 담았습니다.</p>
 </section>
-
-<section class="wrap">
-  <span class="eyebrow">Why here</span>
-  <h2 class="st">신논현에서<br>시술과 교육을 함께 합니다</h2>
-  <p class="ss">가르치는 사람이 현장을 떠나면, 교육도 현장을 떠납니다.</p>
-  <div class="how">
-    <div class="hw">
-      <div class="n">01</div>
-      <div><h4>매일 시술하는 사람이 가르칩니다</h4><p>교육만 하는 곳이 아닙니다. 오늘도 고객을 받는 샵에서, 오늘의 기준으로 가르칩니다.</p></div>
-    </div>
-    <div class="hw">
-      <div class="n">02</div>
-      <div><h4>1:1로 끝까지 붙습니다</h4><p>여러 명을 모아놓고 시연하지 않습니다. 원장님 한 분의 손끝만 봅니다.</p></div>
-    </div>
-    <div class="hw">
-      <div class="n">03</div>
-      <div><h4>수료 후에도 이어집니다</h4><p>샵에 돌아가서 막히는 순간이 진짜입니다. 그때 물어볼 곳을 남겨둡니다.</p></div>
-    </div>
+<div class="wrap" style="padding-bottom:16px">
+  <div class="revgrid" id="revgridHub">
+    <img class="rv" src="assets/img/review4.webp" data-full="assets/img/review4.webp" alt="급속교정 수강 후기: 재방문과 매출이 늘었다는 후기" loading="lazy">
+    <img class="rv" src="assets/img/reviewb4.webp" data-full="assets/img/reviewb4.webp" alt="급속교정 수강 후기: 다른 곳에서 배우고 재수강한 후기" loading="lazy">
+    <img class="rv" src="assets/img/airev1.jpg" data-full="assets/img/airev1.jpg" alt="AI 마케팅 수강 후기: 동기부여가 됐다는 후기" loading="lazy">
+    <img class="rv" src="assets/img/airev2.jpg" data-full="assets/img/airev2.jpg" alt="AI 마케팅 수강 후기: 1:1로 만족스러웠다는 후기" loading="lazy">
+    <img class="rv extra" src="assets/img/review1.webp" data-full="assets/img/review1.webp" alt="급속교정 수강 후기: 결과 복불복이 사라졌다는 후기" loading="lazy">
+    <img class="rv extra" src="assets/img/reviewb2.webp" data-full="assets/img/reviewb2.webp" alt="급속교정 수강 후기: 부산에서 KTX 타고 온 후기" loading="lazy">
   </div>
-</section>
+  <button class="rv-more" id="rvMoreHub">후기 더보기</button>
+</div>
 
 <section class="close wrap">
-  <h2>어느 쪽이든,<br>먼저 <em>물어보셔도</em> 됩니다</h2>
-  <p>고민되는 부분을 말씀해주시면 맞는 쪽을 알려드릴게요.</p>
+  <h2 class="st" style="text-align:center">매일 시술하는 사람이<br>가르칩니다</h2>
+  <p class="lead">니잉은 신논현에서 매일 고객을 받으며, 그 기준 그대로 원장님을 가르칩니다. 어느 교육이 맞을지 고민되신다면, 먼저 물어보셔도 됩니다.</p>
   <a class="pill solid" href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">카카오톡으로 문의하기</a>
-  <div class="fine">니잉 · 매일 시술하고, 가르칩니다<br><a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C106%EA%B8%B8%2018" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">서울 강남구 강남대로106길 18, 2층 (역삼동 812-1)</a><br><a href="https://www.instagram.com/neeink.woody/" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">인스타그램 @neeink.woody</a></div>
+  <div class="fine">니잉 · 매일 시술하고, 가르칩니다<br><a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C106%EA%B8%B8%2018" target="_blank" rel="noopener">서울 강남구 강남대로106길 18, 2층 (역삼동 812-1)</a><br><a href="https://www.instagram.com/neeink.woody/" target="_blank" rel="noopener">인스타그램 @neeink.woody</a></div>
 </section>
 
-<nav class="tab">
-  <a href="#" aria-current="page">
-    <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
-    홈
-  </a>
-  <a href="lash/">
-    <svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/></svg>
-    급속교정
-  </a>
-  <a href="ai/">
-    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M9 11.5 11 13l3.5-3.5"/></svg>
-    AI마케팅
-  </a>
-  <a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L3 21l1.2-3.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>
-    문의
-  </a>
-</nav>
+<div class="cta-fixed">
+  <a href="https://pf.kakao.com/_xdxkxkbG/chat" target="_blank" rel="noopener">카카오톡으로 문의하기</a>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="닫기">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('.rv').forEach(function(img){
+    img.addEventListener('click', function(){
+      lbImg.src = this.dataset.full;
+      lbImg.alt = this.alt;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', function(){ lb.classList.remove('open'); });
+  lbImg.addEventListener('click', function(e){ e.stopPropagation(); });
+  document.getElementById('lbClose').addEventListener('click', function(e){ e.stopPropagation(); lb.classList.remove('open'); });
+  var moreBtn = document.getElementById('rvMoreHub');
+  if(moreBtn){
+    moreBtn.addEventListener('click', function(){
+      document.getElementById('revgridHub').classList.add('show-all');
+      moreBtn.remove();
+    });
+  }
+})();
+</script>
+
 </body>
 </html>
