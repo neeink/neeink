@@ -96,7 +96,8 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 
 /* result cards */
 .result{display:flex;flex-direction:column;margin-top:40px}
-.rs{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:24px 0;border-top:1px solid var(--line);align-items:baseline}
+.rs{display:grid;grid-template-columns:1fr;gap:6px;padding:24px 0;border-top:1px solid var(--line)}
+@media(min-width:620px){.rs{grid-template-columns:130px 1fr;gap:16px;align-items:baseline}}
 .rs:last-child{border-bottom:1px solid var(--line)}
 .rs .n{font-family:var(--font-en);font-size:.72rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
 .rs h4{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-.01em}
