@@ -52,6 +52,7 @@ nav.gnav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
 nav.gnav::-webkit-scrollbar{display:none}
 nav.gnav a{font-size:.78rem;font-weight:700;color:var(--dim);padding:9px 11px;border-radius:999px;min-height:40px;display:flex;align-items:center;white-space:nowrap;transition:color .2s var(--ease),background .2s var(--ease)}
 nav.gnav a:hover{color:var(--ink)}
+@media(max-width:430px){nav.gnav a{font-size:.72rem;padding:8px 7px}}
 nav.gnav a[aria-current="page"]{color:var(--accent);background:var(--accent-dim)}
 
 .hero{padding-top:56px;padding-bottom:44px;text-align:center}
@@ -73,6 +74,7 @@ nav.gnav a[aria-current="page"]{color:var(--accent);background:var(--accent-dim)
 .proof .n{font-family:var(--font-en);font-weight:700;font-size:1.6rem;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .proof .l{font-size:.72rem;color:var(--faint);margin-top:6px}
 
+section[id]{scroll-margin-top:76px}
 section{padding-top:clamp(68px,10vw,100px);padding-bottom:clamp(44px,6vw,60px)}
 .eyebrow{font-family:var(--font-en);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);display:block;margin-bottom:22px}
 h2.st{font-weight:800;font-size:clamp(1.4rem,5vw,2rem);line-height:1.38;letter-spacing:-.02em;margin:0 0 18px}
@@ -135,7 +137,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .diff{margin-top:32px;display:grid;grid-template-columns:1fr;gap:12px}
 @media(min-width:660px){.diff{grid-template-columns:1fr 1fr}}
 .df{border:1px solid var(--line);border-radius:var(--r-card);padding:20px 20px 18px;background:var(--bg-soft)}
-.df .tag{font-family:var(--font-en);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.df .tag{font-family:var(--font-en);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
 .df h4{margin:0 0 8px;font-size:1rem;font-weight:800}
 .df p{margin:0;color:var(--dim);font-size:.87rem;line-height:1.7}
 
@@ -195,7 +197,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
 .close p{color:var(--dim);font-size:.94rem;margin:0 0 28px}
 .fine{margin-top:30px;font-size:.72rem;color:var(--faint);line-height:1.9}
 .fine a{text-decoration:underline;text-underline-offset:3px}
-.biz{margin-top:18px;font-size:.68rem;color:var(--faint);line-height:1.9}
+.biz{margin-top:18px;font-size:.7rem;color:var(--faint);line-height:1.9}
 
 .cta-fixed{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--accent);padding:10px 16px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -2px 14px rgba(0,0,0,.08)}
 .cta-fixed a{display:flex;align-items:center;justify-content:center;height:42px;min-height:40px;color:#fff;font-weight:800;font-size:.92rem;letter-spacing:-.01em}
@@ -205,7 +207,6 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
   <div class="top-in">
     <a class="mark" href="/">니잉<sup>®</sup></a>
     <nav class="gnav">
-      <a href="/">홈</a>
       <a href="/lash/">급속교정</a>
       <a href="/ai/" aria-current="page">AI 마케팅</a>
       <a href="/crew/">래쉬애딕트 도입</a>
@@ -435,12 +436,12 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
     img.addEventListener('click', function(){
       lbImg.src = this.dataset.full;
       lbImg.alt = this.alt;
-      lb.classList.add('open');
+      lb.classList.add("open");document.body.style.overflow="hidden";
     });
   });
-  lb.addEventListener('click', function(){ lb.classList.remove('open'); });
+  lb.addEventListener('click', function(){ lb.classList.remove("open");document.body.style.overflow=""; });
   lbImg.addEventListener('click', function(e){ e.stopPropagation(); });
-  document.getElementById('lbClose').addEventListener('click', function(e){ e.stopPropagation(); lb.classList.remove('open'); });
+  document.getElementById('lbClose').addEventListener('click', function(e){ e.stopPropagation(); lb.classList.remove("open");document.body.style.overflow=""; });
   var moreBtn = document.getElementById('rvMoreAi');
   if(moreBtn){
     moreBtn.addEventListener('click', function(){
@@ -448,6 +449,7 @@ p.ss{color:var(--dim);font-size:.94rem;margin:0;max-width:30em}
       moreBtn.remove();
     });
   }
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("open");document.body.style.overflow="";}});
 })();
 </script>
 
