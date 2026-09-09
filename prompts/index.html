@@ -359,8 +359,8 @@ NON-NEGOTIABLE CONSTRAINTS
       };
       var b = this;
       if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(function(){ done(b); }, function(){ if (fallbackCopy(text)) done(b); else b.textContent = "길게 눌러 직접 복사해주세요"; });
-      } else if (fallbackCopy(text)) { done(b); } else { b.textContent = "길게 눌러 직접 복사해주세요"; }
+        navigator.clipboard.writeText(text).then(function(){ done(b); }, function(){ if (fallbackCopy(text)) done(b); else { b.textContent = "길게 눌러 직접 복사해주세요"; setTimeout(function(){ b.textContent = "프롬프트 복사"; }, 2500); } });
+      } else if (fallbackCopy(text)) { done(b); } else { b.textContent = "길게 눌러 직접 복사해주세요"; setTimeout(function(){ b.textContent = "프롬프트 복사"; }, 2500); }
     });
   });
   document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("open");document.body.style.overflow="";}});
